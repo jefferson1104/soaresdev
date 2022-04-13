@@ -1,0 +1,534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroBanner component should render correctly background svg 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 #square1 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate3 3s ease infinite alternate;
+  animation: rotate3 3s ease infinite alternate;
+}
+
+.c1 #square2 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate3 3s ease infinite alternate;
+  animation: rotate3 3s ease infinite alternate;
+}
+
+.c1 #square3 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate3 3s ease infinite alternate;
+  animation: rotate3 3s ease infinite alternate;
+}
+
+.c1 #square4 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate1 2s ease infinite alternate;
+  animation: rotate1 2s ease infinite alternate;
+}
+
+.c1 #square5 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate1 2s ease infinite alternate;
+  animation: rotate1 2s ease infinite alternate;
+}
+
+.c1 #square6 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate1 2s ease infinite alternate;
+  animation: rotate1 2s ease infinite alternate;
+}
+
+.c1 #square7 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate1 2s ease infinite alternate;
+  animation: rotate1 2s ease infinite alternate;
+}
+
+.c1 #square8 {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-box: fill-box;
+  -ms-transform-box: fill-box;
+  transform-box: fill-box;
+  -webkit-animation: rotate1 2s ease infinite alternate;
+  animation: rotate1 2s ease infinite alternate;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    data-testid="svg-hero"
+  >
+    <svg
+      class="svg-hero"
+      fill="none"
+      viewBox="0 0 2560 1440"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        clip-path="url(#clip0)"
+        id="bg-hero"
+      >
+        <g
+          filter="url(#filter0_f)"
+          id="Vector 1115"
+        >
+          <path
+            d="M2057.98 976.855C1146.98 951.753 866.415 503.508 549.588 516.267C151.315 532.306 225.523 952.751 549.588 1112.95C931.572 1301.78 2675.34 993.867 2057.98 976.855Z"
+            fill="url(#paint0_linear)"
+            fill-opacity="0.3"
+          />
+        </g>
+        <g
+          filter="url(#filter1_f)"
+          id="Vector 1114"
+        >
+          <path
+            d="M1476.29 573.407C1751.06 662.18 2052.39 873.257 2155.63 865.308C2340.45 851.076 2216.87 362.765 1991.12 224.015C1779.29 93.8176 501.679 169.375 872.949 444.168C1070.47 590.363 1242.46 497.856 1476.29 573.407Z"
+            fill="url(#paint1_linear)"
+            fill-opacity="0.2"
+          />
+        </g>
+        <path
+          d="M1267.41 666.294L1267.13 666.71L1267.41 666.294ZM-201.828 404.949C137.424 324.792 379.448 306.724 599.248 350.432C819.05 394.14 1016.68 499.635 1267.13 666.71L1267.68 665.879C1017.2 498.784 819.442 393.199 599.443 349.451C379.442 305.703 137.257 323.804 -202.058 403.976L-201.828 404.949ZM1267.13 666.71C1688.74 947.966 2147.67 1019.85 2660.28 914.971L2660.08 913.991C2147.69 1018.83 1689.05 946.969 1267.68 665.879L1267.13 666.71Z"
+          fill="url(#paint2_linear)"
+          id="bg-heroline3"
+        />
+        <path
+          d="M1280.46 674.69L1280.38 675.183L1280.46 674.69ZM-167.013 1037.71C109.696 825.695 323.115 710.133 541.546 660.032C759.979 609.929 983.476 625.276 1280.38 675.183L1280.54 674.197C983.607 624.284 759.952 608.91 541.322 659.057C322.691 709.204 109.139 824.862 -167.622 1036.91L-167.013 1037.71ZM1280.38 675.183C1780.18 759.197 2228.32 636.915 2653.07 331.374L2652.49 330.562C2227.92 635.966 1780.05 758.161 1280.54 674.197L1280.38 675.183Z"
+          fill="url(#paint3_linear)"
+          id="bg-heroline2"
+        />
+        <path
+          d="M1302.45 761.686L1302.46 762.186L1302.45 761.686ZM-58.4344 1374.01C176.6 1116.57 366.325 965.216 572.515 877.42C778.706 789.623 1001.41 765.36 1302.46 762.186L1302.45 761.186C1001.37 764.36 778.5 788.624 572.123 876.5C365.744 964.377 175.905 1115.84 -59.1729 1373.33L-58.4344 1374.01ZM1302.46 762.186C1809.25 756.842 2228.83 557.531 2593.13 181.945L2592.41 181.248C2228.28 556.667 1808.94 755.846 1302.45 761.186L1302.46 762.186Z"
+          fill="url(#paint4_linear)"
+          id="bg-heroline1"
+        />
+        <rect
+          fill="url(#paint5_linear)"
+          height="16"
+          id="square8"
+          rx="2"
+          transform="rotate(22.2604 1491.06 687)"
+          width="16"
+          x="1491.06"
+          y="687"
+        />
+        <rect
+          fill="url(#paint6_linear)"
+          height="16"
+          id="square7"
+          rx="2"
+          transform="rotate(22.2604 2143.06 590)"
+          width="16"
+          x="2143.06"
+          y="590"
+        />
+        <rect
+          fill="url(#paint7_linear)"
+          height="16"
+          id="square6"
+          rx="2"
+          transform="rotate(-20.0179 772 398.477)"
+          width="16"
+          x="772"
+          y="398.477"
+        />
+        <rect
+          fill="url(#paint8_linear)"
+          height="16"
+          id="square5"
+          rx="2"
+          transform="rotate(91.8123 1764.68 369.691)"
+          width="16"
+          x="1764.68"
+          y="369.691"
+        />
+        <rect
+          fill="url(#paint9_linear)"
+          height="16"
+          id="square4"
+          rx="2"
+          transform="rotate(80.4128 1078.78 1029)"
+          width="16"
+          x="1078.78"
+          y="1029"
+        />
+        <rect
+          fill="url(#paint10_linear)"
+          height="207.755"
+          id="square3"
+          rx="4"
+          transform="rotate(46.2939 1875.18 583)"
+          width="207.755"
+          x="1875.18"
+          y="583"
+        />
+        <rect
+          fill="url(#paint11_linear)"
+          height="48"
+          id="square2"
+          rx="4"
+          transform="rotate(124.402 424.724 823.12)"
+          width="48"
+          x="424.724"
+          y="823.12"
+        />
+        <rect
+          fill="url(#paint12_linear)"
+          height="72"
+          id="square1"
+          rx="4"
+          transform="rotate(25.1155 1240.56 302)"
+          width="72"
+          x="1240.56"
+          y="302"
+        />
+      </g>
+      <defs>
+        <filter
+          color-interpolation-filters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="1358"
+          id="filter0_f"
+          width="2611"
+          x="-71.9999"
+          y="166"
+        >
+          <feflood
+            flood-opacity="0"
+            result="BackgroundImageFix"
+          />
+          <feblend
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            mode="normal"
+            result="shape"
+          />
+          <fegaussianblur
+            result="effect1_foregroundBlur"
+            stdDeviation="175"
+          />
+        </filter>
+        <filter
+          color-interpolation-filters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="1702.83"
+          id="filter1_f"
+          width="2090.73"
+          x="487"
+          y="-300"
+        >
+          <feflood
+            flood-opacity="0"
+            result="BackgroundImageFix"
+          />
+          <feblend
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            mode="normal"
+            result="shape"
+          />
+          <fegaussianblur
+            result="effect1_foregroundBlur"
+            stdDeviation="150"
+          />
+        </filter>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint0_linear"
+          x1="2189"
+          x2="1783.9"
+          y1="516"
+          y2="1692.51"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint1_linear"
+          x1="952.771"
+          x2="1478.86"
+          y1="1102.83"
+          y2="-246.785"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint2_linear"
+          x1="2663.88"
+          x2="-198.243"
+          y1="893.717"
+          y2="383.698"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint3_linear"
+          x1="2647.66"
+          x2="-172.442"
+          y1="310.509"
+          y2="1016.85"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint4_linear"
+          x1="2584.12"
+          x2="-67.452"
+          y1="162.36"
+          y2="1354.43"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint5_linear"
+          x1="1507.06"
+          x2="1491.06"
+          y1="687"
+          y2="703"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint6_linear"
+          x1="2159.06"
+          x2="2143.06"
+          y1="590"
+          y2="606"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint7_linear"
+          x1="788"
+          x2="772"
+          y1="398.477"
+          y2="414.477"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint8_linear"
+          x1="1780.68"
+          x2="1764.68"
+          y1="369.691"
+          y2="385.691"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint9_linear"
+          x1="1094.78"
+          x2="1078.78"
+          y1="1029"
+          y2="1045"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint10_linear"
+          x1="2082.94"
+          x2="1875.18"
+          y1="583"
+          y2="790.755"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint11_linear"
+          x1="472.724"
+          x2="424.724"
+          y1="823.12"
+          y2="871.12"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <lineargradient
+          gradientUnits="userSpaceOnUse"
+          id="paint12_linear"
+          x1="1312.56"
+          x2="1240.56"
+          y1="302"
+          y2="374"
+        >
+          <stop
+            stop-color="#2DC7ED"
+          />
+          <stop
+            offset="1"
+            stop-color="#4bbecf"
+            stop-opacity="0"
+          />
+        </lineargradient>
+        <clippath
+          id="clip0"
+        >
+          <rect
+            fill="white"
+            height="1440"
+            width="2560"
+          />
+        </clippath>
+      </defs>
+    </svg>
+  </div>
+</div>
+`;
