@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MainBackground component should render correctly background svg 1`] = `
+exports[`Background component should render correctly background svg 1`] = `
 .c0 {
   position: relative;
 }
@@ -533,4 +533,4 @@ exports[`MainBackground component should render correctly background svg 1`] = `
     </svg>
   </div>
 </div>
-`;
+`

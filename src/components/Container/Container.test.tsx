@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 
-import { Container } from '.'
+import Container from '.'
 
 describe('Container component', () => {
   it('should render container component', () => {
