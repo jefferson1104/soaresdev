@@ -96,7 +96,7 @@ export default function Home() {
         generated Lorem Ipsum is therefore always free from repetition, injected
         humour, or non-characteristic words etc.
       </p>
-      <p style={{ fontSize: '30px', letterSpacing: '2px' }}>
+      <p style={{ fontSize: '30px', letterSpacing: '2px' }} id="test">
         What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
         and typesetting industry. Lorem Ipsum has been the industrys standard
         dummy text ever since the 1500s, when an unknown printer took a galley

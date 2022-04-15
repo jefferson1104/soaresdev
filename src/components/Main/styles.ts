@@ -35,6 +35,7 @@ export const ContentWrapper = styled.div`
     p {
       font-size: ${theme.font.sizes.medium};
       line-height: 3rem;
+      margin-bottom: ${theme.spacings.large};
     }
 
     ${media.lessThan('medium')`

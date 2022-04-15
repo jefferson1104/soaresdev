@@ -51,6 +51,7 @@ const GlobalStyles: GlobalStyleComponent<
 
   html, body, #__next {
     height: 100%;
+    scroll-behavior: smooth;
   }
 
   ${({ theme, removeBg }) => css`

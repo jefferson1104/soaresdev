@@ -1,4 +1,8 @@
+import Link from 'next/link'
+import { ArrowheadRightOutline } from '@styled-icons/evaicons-outline'
+
 import Background from 'components/Background'
+import Button from 'components/Button'
 import Container from 'components/Container'
 import Logo from 'components/Logo'
 
@@ -22,6 +26,11 @@ const Main = () => {
               empresas e empreendedores em soluções tecnológicas, criando
               produtos de software inovadores.
             </p>
+            <Link href="#test">
+              <Button as="a" icon={<ArrowheadRightOutline />}>
+                Saiba mais
+              </Button>
+            </Link>
           </S.ContentWrapper>
         </S.Wrapper>
       </Container>
