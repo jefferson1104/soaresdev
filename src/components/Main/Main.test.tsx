@@ -2,18 +2,32 @@ import { render, screen } from '@testing-library/react'
 
 import Main from '.'
 
+jest.mock('components/Background', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Background"></div>
+    }
+  }
+})
+
+jest.mock('components/Container', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Container"></div>
+    }
+  }
+})
+
 describe('Main component', () => {
-  it('should render the heading', () => {
-    const { container } = render(<Main />)
+  it('should render correctly', () => {
+    render(<Main />)
 
-    expect(
-      screen.getByRole('heading', { name: /SoaresDev.com/i })
-    ).toBeInTheDocument()
+    const mainBackgroundComponent = screen.getByTestId(/Mock Background/i)
+    expect(mainBackgroundComponent).toBeInTheDocument()
+
+    const containerComponent = screen.getByTestId(/Mock Container/i)
+    expect(containerComponent).toBeInTheDocument()
   })
-
-  /* it('should render the colors correctly', () => {
-    const { container } = render(<Main />)
-
-    expect(container.firstChild).toHaveStyle({ 'background-color': '#fff' })
-  }) */
 })

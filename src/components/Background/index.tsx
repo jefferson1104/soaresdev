@@ -1,9 +1,9 @@
 import * as S from './styles'
 
-const HeroBackground = () => {
+const Background = () => {
   return (
     <S.Wrapper>
-      <S.HeroBackground data-testid="svg-hero">
+      <S.MainBackground data-testid="svg-hero">
         <svg
           className="svg-hero"
           viewBox="0 0 2560 1440"
@@ -312,9 +312,9 @@ const HeroBackground = () => {
             </clipPath>
           </defs>
         </svg>
-      </S.HeroBackground>
+      </S.MainBackground>
     </S.Wrapper>
   )
 }
 
-export default HeroBackground
+export default Background

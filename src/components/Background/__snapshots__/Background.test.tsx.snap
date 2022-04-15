@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HeroBanner component should render correctly background svg 1`] = `
+exports[`MainBackground component should render correctly background svg 1`] = `
 .c0 {
   position: relative;
 }
@@ -25,6 +25,8 @@ exports[`HeroBanner component should render correctly background svg 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-filter: opacity(40%);
+  filter: opacity(40%);
 }
 
 .c1 #square1 {

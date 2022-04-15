@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react'
 
-import HeroBanner from '.'
+import Background from '.'
 
-describe('HeroBanner component', () => {
+describe('MainBackground component', () => {
   it('should render correctly background svg', () => {
-    const { container } = render(<HeroBanner />)
+    const { container } = render(<Background />)
 
     const svgImage = screen.getByTestId('svg-hero')
     expect(svgImage).toBeInTheDocument()

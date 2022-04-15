@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   position: relative;
 `
 
-export const HeroBackground = styled.div`
+export const MainBackground = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -18,6 +18,8 @@ export const HeroBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  filter: opacity(40%);
 
   #square1 {
     transform-origin: center center;

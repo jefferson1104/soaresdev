@@ -1,19 +1,30 @@
+import Background from 'components/Background'
+import { Container } from 'components/Container'
 import Logo from 'components/Logo'
-import HeroBackground from 'components/HeroBackground'
+
 import * as S from './styles'
 
-const Main = ({
-  title = 'SoaresDev.com',
-  description = 'Desenvolvimento de aplicativos, websites, landing pages, e-commerce e plataformas online.'
-}) => {
+const Main = () => {
   return (
     <>
-      <HeroBackground />
-      <S.Wrapper>
-        <Logo />
-        <S.Title>{title}</S.Title>
-        <S.Description>{description}</S.Description>
-      </S.Wrapper>
+      <Background />
+      <Container>
+        <S.Wrapper>
+          <S.LogoWrapper>
+            <Logo />
+          </S.LogoWrapper>
+
+          <S.ContentWrapper>
+            <h1>Desenvolvimento de software</h1>
+            <p>
+              Impulsione seu negócio com as melhores tecnologias utilizadas
+              pelos gigantes do Vale do Silício, transformamos desafios de
+              empresas e empreendedores em soluções tecnológicas, criando
+              produtos de software inovadores.
+            </p>
+          </S.ContentWrapper>
+        </S.Wrapper>
+      </Container>
     </>
   )
 }
