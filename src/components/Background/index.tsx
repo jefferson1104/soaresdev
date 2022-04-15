@@ -172,8 +172,8 @@ const Background = () => {
               y2="1692.51"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear"
@@ -183,8 +183,8 @@ const Background = () => {
               y2="-246.785"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint2_linear"
@@ -194,8 +194,8 @@ const Background = () => {
               y2="383.698"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint3_linear"
@@ -205,8 +205,8 @@ const Background = () => {
               y2="1016.85"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint4_linear"
@@ -216,8 +216,8 @@ const Background = () => {
               y2="1354.43"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint5_linear"
@@ -227,8 +227,8 @@ const Background = () => {
               y2="703"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint6_linear"
@@ -238,8 +238,8 @@ const Background = () => {
               y2="606"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint7_linear"
@@ -249,8 +249,8 @@ const Background = () => {
               y2="414.477"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint8_linear"
@@ -260,8 +260,8 @@ const Background = () => {
               y2="385.691"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint9_linear"
@@ -271,8 +271,8 @@ const Background = () => {
               y2="1045"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint10_linear"
@@ -282,8 +282,8 @@ const Background = () => {
               y2="790.755"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint11_linear"
@@ -293,8 +293,8 @@ const Background = () => {
               y2="871.12"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint12_linear"
@@ -304,8 +304,8 @@ const Background = () => {
               y2="374"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#2DC7ED" />
-              <stop offset="1" stopColor="#4bbecf" stopOpacity="0" />
+              <stop stopColor="#4bbecf" />
+              <stop offset="1" stopColor="#F231A5" stopOpacity="0" />
             </linearGradient>
             <clipPath id="clip0">
               <rect width="2560" height="1440" fill="white" />

@@ -1,4 +1,6 @@
-import { render } from '@testing-library/react'
+import { render } from 'utils/test-utils'
+
+import theme from 'styles/theme'
 
 import Container from '.'
 
@@ -6,7 +8,10 @@ describe('Container component', () => {
   it('should render container component', () => {
     const { container } = render(<Container />)
 
-    expect(container.firstChild).toHaveStyle('max-width: 130rem')
+    expect(container.firstChild).toHaveStyleRule(
+      'max-width',
+      theme.grid.container
+    )
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {

@@ -302,11 +302,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="1692.51"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -319,11 +319,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="-246.785"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -336,11 +336,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="383.698"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -353,11 +353,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="1016.85"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -370,11 +370,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="1354.43"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -387,11 +387,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="703"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -404,11 +404,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="606"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -421,11 +421,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="414.477"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -438,11 +438,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="385.691"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -455,11 +455,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="1045"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -472,11 +472,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="790.755"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -489,11 +489,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="871.12"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>
@@ -506,11 +506,11 @@ exports[`Background component should render correctly background svg 1`] = `
           y2="374"
         >
           <stop
-            stop-color="#2DC7ED"
+            stop-color="#4bbecf"
           />
           <stop
             offset="1"
-            stop-color="#4bbecf"
+            stop-color="#F231A5"
             stop-opacity="0"
           />
         </lineargradient>

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
@@ -16,31 +16,36 @@ export const Wrapper = styled.main`
 `
 
 export const LogoWrapper = styled.div`
-  margin-bottom: 4rem;
+  ${({ theme }) => css`
+    margin-bottom: ${theme.spacings.large};
+  `}
 `
 
 export const ContentWrapper = styled.div`
-  text-align: center;
-  max-width: 800px;
+  ${({ theme }) => css`
+    text-align: center;
+    max-width: 80rem;
+    color: ${theme.colors.white};
 
-  h1 {
-    font-size: 5rem;
-    font-weight: 700;
-  }
-
-  p {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-
-  ${media.lessThan('medium')`
     h1 {
-      font-size: 2.5rem;
+      font-size: ${theme.font.sizes.huge};
+      font-weight: ${theme.font.bold};
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: ${theme.font.sizes.medium};
+      line-height: 3rem;
+    }
+
+    ${media.lessThan('medium')`
+    h1 {
+      font-size: ${theme.font.sizes.large};
+    }
+
+    p {
+      font-size: ${theme.font.sizes.small};
       line-height: 2rem;
     }
+  `}
   `}
 `
