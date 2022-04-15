@@ -13,20 +13,8 @@ exports[`Background component should render correctly background svg 1`] = `
   height: 100vh;
   overflow: hidden;
   z-index: -1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-filter: opacity(40%);
-  filter: opacity(40%);
+  -webkit-filter: opacity(60%);
+  filter: opacity(60%);
 }
 
 .c1 #square1 {
@@ -115,6 +103,12 @@ exports[`Background component should render correctly background svg 1`] = `
   transform-box: fill-box;
   -webkit-animation: rotate1 2s ease infinite alternate;
   animation: rotate1 2s ease infinite alternate;
+}
+
+@media (max-width:768px) {
+  .c1 {
+    margin-top: 6rem;
+  }
 }
 
 <div

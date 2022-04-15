@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   position: relative;
@@ -15,11 +16,7 @@ export const MainBackground = styled.div`
   overflow: hidden;
   z-index: -1;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  filter: opacity(40%);
+  filter: opacity(60%);
 
   #square1 {
     transform-origin: center center;
@@ -88,4 +85,8 @@ export const MainBackground = styled.div`
       transform: rotate(180deg);
     }
   }
+
+  ${media.lessThan('medium')`
+    margin-top: 6rem;
+  `}
 `
