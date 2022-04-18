@@ -10,15 +10,15 @@ import * as S from './styles'
 
 const Main = () => {
   return (
-    <>
+    <S.Wrapper>
       <Background />
       <Container>
-        <S.Wrapper>
-          <S.LogoWrapper>
+        <S.MainContainer>
+          <S.MainLogo>
             <Logo />
-          </S.LogoWrapper>
+          </S.MainLogo>
 
-          <S.ContentWrapper>
+          <S.MainContent>
             <h1>Desenvolvimento de software</h1>
             <p>
               Impulsione seu negócio com as melhores tecnologias utilizadas
@@ -31,10 +31,10 @@ const Main = () => {
                 Saiba mais
               </Button>
             </Link>
-          </S.ContentWrapper>
-        </S.Wrapper>
+          </S.MainContent>
+        </S.MainContainer>
       </Container>
-    </>
+    </S.Wrapper>
   )
 }
 

@@ -4,7 +4,10 @@ import media from 'styled-media-query'
 export const Wrapper = styled.main`
   width: 100%;
   height: 100%;
+  box-shadow: 0px -30px 50px #1d1b27 inset;
+`
 
+export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,13 +18,13 @@ export const Wrapper = styled.main`
   `}
 `
 
-export const LogoWrapper = styled.div`
+export const MainLogo = styled.div`
   ${({ theme }) => css`
     margin-bottom: ${theme.spacings.large};
   `}
 `
 
-export const ContentWrapper = styled.div`
+export const MainContent = styled.div`
   ${({ theme }) => css`
     text-align: center;
     max-width: 80rem;
