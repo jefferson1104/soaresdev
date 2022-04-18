@@ -63,15 +63,14 @@ export const Wrapper = styled.button<WrapperProps>`
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
     text-decoration: none;
+    transition: filter 0.3s ease-in-out;
 
     &:focus {
       outline: 1px dashed;
     }
 
     &:hover {
-      background: ${minimal
-        ? 'none'
-        : `linear-gradient(180deg, #45a5b4 0%, #4c7edb 50%)`};
+      filter: ${minimal ? 'none' : `brightness(0.8)`};
     }
 
     ${!!size && wrapperModifiers[size](theme)};
