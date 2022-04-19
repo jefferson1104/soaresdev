@@ -15,8 +15,17 @@ jest.mock('components/Background', () => {
 jest.mock('components/Container', () => {
   return {
     __esModule: true,
+    default: function Mock({ children }: { children: React.ReactNode }) {
+      return <div data-testid="Mock Container">{children}</div>
+    }
+  }
+})
+
+jest.mock('components/Logo', () => {
+  return {
+    __esModule: true,
     default: function Mock() {
-      return <div data-testid="Mock Container"></div>
+      return <div data-testid="Mock Logo"></div>
     }
   }
 })
@@ -30,5 +39,14 @@ describe('Main component', () => {
 
     const containerComponent = screen.getByTestId(/Mock Container/i)
     expect(containerComponent).toBeInTheDocument()
+
+    const logoComponent = screen.getByTestId(/Mock Logo/i)
+    expect(logoComponent).toBeInTheDocument()
+
+    expect(
+      screen.getByRole('heading', {
+        name: /Desenvolvimento de software/i
+      })
+    ).toBeInTheDocument()
   })
 })
