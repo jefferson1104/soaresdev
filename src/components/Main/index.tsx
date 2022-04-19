@@ -6,6 +6,7 @@ import Button from 'components/Button'
 import Container from 'components/Container'
 import Logo from 'components/Logo'
 
+import MediaQuery from 'react-responsive'
 import * as S from './styles'
 
 const Main = () => {
@@ -15,7 +16,12 @@ const Main = () => {
       <Container>
         <S.MainContainer>
           <S.MainLogo>
-            <Logo />
+            <MediaQuery minWidth={768}>
+              <Logo />
+            </MediaQuery>
+            <MediaQuery maxWidth={767}>
+              <Logo size="small" />
+            </MediaQuery>
           </S.MainLogo>
 
           <S.MainContent>

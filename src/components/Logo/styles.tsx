@@ -5,8 +5,8 @@ import { LogoProps } from '.'
 const wrapperModifiers = {
   small: () => css`
     img {
-      width: 20rem;
-      height: 15rem;
+      width: 25rem;
+      height: 20rem;
     }
   `,
 

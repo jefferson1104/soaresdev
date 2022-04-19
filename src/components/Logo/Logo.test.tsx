@@ -21,7 +21,7 @@ describe('Logo component', () => {
     render(<Logo size="small" />)
 
     expect(screen.getByRole('img', { name: /soaresdev/i })).toHaveStyle(
-      'width: 20rem'
+      'width: 25rem'
     )
   })
 })

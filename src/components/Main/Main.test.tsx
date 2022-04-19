@@ -40,9 +40,6 @@ describe('Main component', () => {
     const containerComponent = screen.getByTestId(/Mock Container/i)
     expect(containerComponent).toBeInTheDocument()
 
-    const logoComponent = screen.getByTestId(/Mock Logo/i)
-    expect(logoComponent).toBeInTheDocument()
-
     expect(
       screen.getByRole('heading', {
         name: /Desenvolvimento de software/i
