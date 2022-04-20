@@ -16,7 +16,6 @@ describe('Container component', () => {
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         width: 100%;
-        height: 100%;
         max-width: 130rem;
         margin-left: auto;
         margin-right: auto;
