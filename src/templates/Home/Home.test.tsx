@@ -19,15 +19,6 @@ jest.mock('components/Main', () => {
   }
 })
 
-jest.mock('components/Container', () => {
-  return {
-    __esModule: true,
-    default: function Mock({ children }: { children: React.ReactNode }) {
-      return <div data-testid="Mock Container">{children}</div>
-    }
-  }
-})
-
 jest.mock('components/Services', () => {
   return {
     __esModule: true,
@@ -43,9 +34,6 @@ describe('Home component', () => {
 
     const mainComponent = screen.getByTestId(/Mock Main/i)
     expect(mainComponent).toBeInTheDocument()
-
-    const containerComponent = screen.getByTestId(/Mock Container/i)
-    expect(containerComponent).toBeInTheDocument()
 
     const servicesComponent = screen.getByTestId(/Mock Services/i)
     expect(servicesComponent).toBeInTheDocument()

@@ -6,23 +6,18 @@ import Button from 'components/Button'
 import Container from 'components/Container'
 import Logo from 'components/Logo'
 
-import MediaQuery from 'react-responsive'
+import { useMediaQuery } from 'react-responsive'
 import * as S from './styles'
 
 const Main = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+
   return (
     <S.Wrapper>
       <Background />
       <Container>
         <S.MainContainer>
-          <S.MainLogo>
-            <MediaQuery minWidth={768}>
-              <Logo />
-            </MediaQuery>
-            <MediaQuery maxWidth={767}>
-              <Logo size="small" />
-            </MediaQuery>
-          </S.MainLogo>
+          <S.MainLogo>{isMobile ? <Logo size="small" /> : <Logo />}</S.MainLogo>
 
           <S.MainContent>
             <h1>Desenvolvimento de software</h1>
