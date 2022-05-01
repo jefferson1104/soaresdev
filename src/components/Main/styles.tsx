@@ -4,7 +4,13 @@ import media from 'styled-media-query'
 export const Wrapper = styled.main`
   width: 100%;
   height: 100%;
-  box-shadow: 0px -30px 50px #1d1b27 inset;
+  max-height: 95rem;
+
+  box-shadow: 0px -50px 80px #1d1b27 inset;
+
+  ${media.lessThan('medium')`
+    height: 75rem;
+  `}
 `
 
 export const MainContainer = styled.div`
@@ -42,14 +48,14 @@ export const MainContent = styled.div`
     }
 
     ${media.lessThan('medium')`
-    h1 {
-      font-size: ${theme.font.sizes.large};
-    }
+      h1 {
+        font-size: ${theme.font.sizes.large};
+      }
 
-    p {
-      font-size: ${theme.font.sizes.small};
-      line-height: 2rem;
-    }
-  `}
+      p {
+        font-size: ${theme.font.sizes.small};
+        line-height: 2rem;
+      }
+    `}
   `}
 `

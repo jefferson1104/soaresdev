@@ -3,6 +3,13 @@ import { screen } from '@testing-library/react'
 
 import Home from '.'
 
+jest.mock('templates/Base', () => ({
+  __esModule: true,
+  default: function Mock({ children }: { children: React.ReactNode }) {
+    return <div data-testid="Mock Base">{children}</div>
+  }
+}))
+
 jest.mock('components/Main', () => {
   return {
     __esModule: true,

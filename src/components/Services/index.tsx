@@ -4,13 +4,13 @@ import { Connectdevelop } from '@styled-icons/fa-brands'
 
 const servicesData = [
   {
-    name: 'Front-end',
+    name: 'FRONT-END',
     description:
       'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry',
     icon: <Front />
   },
   {
-    name: 'Back-end',
+    name: 'BACK-END',
     description:
       'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry',
     icon: <Back />
