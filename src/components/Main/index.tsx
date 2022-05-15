@@ -13,29 +13,33 @@ const Main = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 })
 
   return (
-    <S.Wrapper>
+    <>
       <Background />
-      <Container>
-        <S.MainContainer>
-          <S.MainLogo>{isMobile ? <Logo size="small" /> : <Logo />}</S.MainLogo>
+      <S.Wrapper>
+        <Container>
+          <S.MainContainer>
+            <S.MainLogo>
+              {isMobile ? <Logo size="small" /> : <Logo />}
+            </S.MainLogo>
 
-          <S.MainContent>
-            <h1>Desenvolvimento de software</h1>
-            <p>
-              Impulsione seu negócio com as melhores tecnologias utilizadas
-              pelos gigantes do Vale do Silício, transformamos desafios de
-              empresas e empreendedores em soluções tecnológicas, criando
-              produtos de software inovadores.
-            </p>
-            <Link href="#test">
-              <Button as="a" icon={<ArrowheadRightOutline />}>
-                Saiba mais
-              </Button>
-            </Link>
-          </S.MainContent>
-        </S.MainContainer>
-      </Container>
-    </S.Wrapper>
+            <S.MainContent>
+              <h1>Desenvolvimento de software</h1>
+              <p>
+                Impulsione seu negócio com as melhores tecnologias utilizadas
+                pelos gigantes do Vale do Silício, transformamos desafios de
+                empresas e empreendedores em soluções tecnológicas, criando
+                produtos de software inovadores.
+              </p>
+              <Link href="#services">
+                <Button as="a" icon={<ArrowheadRightOutline />}>
+                  Saiba mais
+                </Button>
+              </Link>
+            </S.MainContent>
+          </S.MainContainer>
+        </Container>
+      </S.Wrapper>
+    </>
   )
 }
 

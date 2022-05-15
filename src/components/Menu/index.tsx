@@ -25,7 +25,7 @@ const Menu = () => {
             <S.MenuLink>Home</S.MenuLink>
           </Link>
 
-          <Link href="/" passHref>
+          <Link href="#services" passHref>
             <S.MenuLink>Serviços</S.MenuLink>
           </Link>
 

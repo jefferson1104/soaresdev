@@ -19,7 +19,7 @@ export const BaseContainer = styled(Container)`
 export const Content = styled.div`
   ${({ theme }) => css`
     flex: 1 0 auto;
-    margin-top: ${theme.spacings.xxlarge};
+    // margin-top: ${theme.spacings.xxlarge};
   `}
 `
 

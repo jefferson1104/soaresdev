@@ -55,5 +55,21 @@ export const ServicesCard = styled.div`
       margin-bottom: ${theme.spacings.xxlarge};
       color: ${theme.colors.lightGray};
     }
+
+    ${media.lessThan('medium')`
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+
+      h3 {
+        font-size: ${theme.font.sizes.large};
+      }
+
+      p {
+        font-size: ${theme.font.sizes.small};
+        line-height: ${theme.spacings.small};
+      }
+    `}
   `}
 `
