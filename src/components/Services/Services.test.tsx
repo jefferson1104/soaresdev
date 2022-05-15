@@ -5,7 +5,9 @@ import Services from '.'
 
 describe('Services component', () => {
   it('should render the heading', () => {
-    render(<Services />)
+    const { container } = render(<Services />)
+
+    expect(container.querySelector('section')).toHaveAttribute('id', 'services')
 
     expect(
       screen.getByRole('heading', { name: /serviços/i })

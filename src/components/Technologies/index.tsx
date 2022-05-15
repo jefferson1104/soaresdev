@@ -24,7 +24,7 @@ const technologies = [
 
 const Technologies = () => {
   return (
-    <S.Wrapper id="#technologies">
+    <S.Wrapper id="technologies">
       <Container>
         <S.Content>
           <h2>Tecnologias</h2>

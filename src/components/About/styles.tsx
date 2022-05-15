@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.section`
   .paralax-image {
     position: relative;
     height: 80vh;
@@ -11,7 +11,7 @@ export const Wrapper = styled.main`
   }
 `
 
-export const Content = styled.main`
+export const Content = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;

@@ -34,8 +34,8 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <Container id="services">
-      <S.Wrapper>
+    <Container>
+      <S.Wrapper id="services">
         <h2>Serviços</h2>
         <S.ServicesContent>
           {servicesData &&

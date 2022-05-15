@@ -29,11 +29,11 @@ const Menu = () => {
             <S.MenuLink>Serviços</S.MenuLink>
           </Link>
 
-          <Link href="/" passHref>
+          <Link href="#about" passHref>
             <S.MenuLink>Sobre</S.MenuLink>
           </Link>
 
-          <Link href="/" passHref>
+          <Link href="#technologies" passHref>
             <S.MenuLink>Tecnologias</S.MenuLink>
           </Link>
 

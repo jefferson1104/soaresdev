@@ -7,7 +7,7 @@ describe('Technologies component', () => {
     const { container } = render(<Technologies />)
 
     const checkSectionId = container.querySelector('section')
-    expect(checkSectionId).toHaveAttribute('id', '#technologies')
+    expect(checkSectionId).toHaveAttribute('id', 'technologies')
 
     const checkSectionTitle = screen.getByRole('heading', {
       name: /tecnologias/i
