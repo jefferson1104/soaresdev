@@ -1,5 +1,4 @@
-import { render } from 'utils/test-utils'
-import { screen } from '@testing-library/react'
+import { render, screen } from 'utils/test-utils'
 
 import Home from '.'
 
@@ -28,14 +27,38 @@ jest.mock('components/Services', () => {
   }
 })
 
+jest.mock('components/About', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock About"></div>
+    }
+  }
+})
+
+jest.mock('components/Technologies', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Technologies"></div>
+    }
+  }
+})
+
 describe('Home component', () => {
-  it('should render the heading', () => {
+  it('should render correctly', () => {
     render(<Home />)
 
-    const mainComponent = screen.getByTestId(/Mock Main/i)
-    expect(mainComponent).toBeInTheDocument()
+    const checkMainComponent = screen.getByTestId(/Mock Main/i)
+    expect(checkMainComponent).toBeInTheDocument()
 
-    const servicesComponent = screen.getByTestId(/Mock Services/i)
-    expect(servicesComponent).toBeInTheDocument()
+    const checkServicesComponent = screen.getByTestId(/Mock Services/i)
+    expect(checkServicesComponent).toBeInTheDocument()
+
+    const checkAboutComponent = screen.getByTestId(/Mock About/i)
+    expect(checkAboutComponent).toBeInTheDocument()
+
+    const checkTechnologies = screen.getByTestId(/Mock Technologies/i)
+    expect(checkTechnologies).toBeInTheDocument()
   })
 })

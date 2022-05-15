@@ -13,6 +13,12 @@ export const Wrapper = styled.section`
       color: ${theme.colors.white};
       margin-bottom: ${theme.spacings.xxlarge};
     }
+
+    ${media.lessThan('medium')`
+      h2 {
+        font-size: ${theme.font.sizes.xlarge};
+      }
+    `}
   `}
 `
 
