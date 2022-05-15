@@ -5,7 +5,7 @@ import * as S from './styles'
 
 const About = () => {
   return (
-    <S.Wrapper id="about" data-aos="fade-up">
+    <S.Wrapper id="about">
       <Parallax
         className="paralax-image"
         bgImage="img/parallax-banner.png"
@@ -13,7 +13,7 @@ const About = () => {
         strength={600}
       >
         <Container>
-          <S.Content>
+          <S.Content data-aos="zoom-in">
             <h2>Sobre Nós</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
