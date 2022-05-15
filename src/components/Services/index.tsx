@@ -36,8 +36,8 @@ const Services = () => {
   return (
     <Container>
       <S.Wrapper id="services">
-        <h2>Serviços</h2>
-        <S.ServicesContent>
+        <h2 data-aos="fade-right">Serviços</h2>
+        <S.ServicesContent data-aos="fade-left">
           {servicesData &&
             servicesData.map((service) => {
               return (

@@ -5,7 +5,7 @@ import * as S from './styles'
 
 const About = () => {
   return (
-    <S.Wrapper id="about">
+    <S.Wrapper id="about" data-aos="fade-up">
       <Parallax
         className="paralax-image"
         bgImage="img/parallax-banner.png"

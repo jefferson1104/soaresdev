@@ -27,9 +27,9 @@ const Technologies = () => {
     <S.Wrapper id="technologies">
       <Container>
         <S.Content>
-          <h2>Tecnologias</h2>
+          <h2 data-aos="fade-up">Tecnologias</h2>
 
-          <S.Cards>
+          <S.Cards data-aos="fade-down">
             {technologies.map((technology, index) => {
               return (
                 <S.Card key={index}>

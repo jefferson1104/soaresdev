@@ -18,11 +18,11 @@ const Main = () => {
       <S.Wrapper>
         <Container>
           <S.MainContainer>
-            <S.MainLogo>
+            <S.MainLogo data-aos="fade-left">
               {isMobile ? <Logo size="small" /> : <Logo />}
             </S.MainLogo>
 
-            <S.MainContent>
+            <S.MainContent data-aos="zoom-in">
               <h1>Desenvolvimento de software</h1>
               <p>
                 Impulsione seu negócio com as melhores tecnologias utilizadas
