@@ -1,4 +1,5 @@
 import Menu from 'components/Menu'
+import ScrollToTop from 'components/ScrollToTop'
 // import Footer from 'components/Footer'
 
 import * as S from './styles'
@@ -16,6 +17,7 @@ const Base = ({ children }: BaseTemplateProps) => {
 
       <S.Content>{children}</S.Content>
 
+      <ScrollToTop />
       {/* <S.SectionFooter>
         <Container>
           <Footer />
