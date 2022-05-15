@@ -38,13 +38,4 @@ describe('Main component', () => {
       })
     ).toBeInTheDocument()
   })
-
-  it('should render with small logo size', () => {
-    const { debug } = render(<Main />)
-
-    debug()
-    // expect(screen.getByRole('img', { name: /soaresdev/i })).toHaveStyle(
-    //   'width: 25rem'
-    // )
-  })
 })
