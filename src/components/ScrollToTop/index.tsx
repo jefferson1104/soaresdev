@@ -5,14 +5,17 @@ import * as S from './styles'
 
 const ScrollToTop = () => {
   const [scrollState, setScrollState] = useState(false)
+  const isBrowser = typeof window !== 'undefined'
 
   function toTop() {
     window.scrollTo({ top: 0 })
   }
 
-  window.addEventListener('scroll', () => {
-    window.pageYOffset > 200 ? setScrollState(true) : setScrollState(false)
-  })
+  if (isBrowser) {
+    window.addEventListener('scroll', () => {
+      window.pageYOffset > 200 ? setScrollState(true) : setScrollState(false)
+    })
+  }
 
   return (
     <S.Wrapper
