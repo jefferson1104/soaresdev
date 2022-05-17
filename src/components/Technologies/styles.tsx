@@ -13,11 +13,12 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: ${theme.spacings.xxlarge} 0;
 
     h2 {
       font-size: ${theme.font.sizes.huge};
       font-weight: ${theme.font.bold};
-      margin: 10rem 0;
+      // margin: 10rem 0;
     }
 
     ${media.lessThan('medium')`
@@ -29,15 +30,18 @@ export const Content = styled.div`
 `
 
 export const Cards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 15rem;
+  ${({ theme }) => css`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15rem;
+    margin: ${theme.spacings.xxlarge} 0;
 
-  ${media.lessThan('medium')`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    ${media.lessThan('medium')`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    `}
   `}
 `
 
@@ -228,5 +232,128 @@ export const CardContent = styled.div`
         font-size: ${theme.font.sizes.small};
       }
     `}
+  `}
+`
+
+export const Technologies = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: row;
+
+    ${media.lessThan('huge')`
+      overflow-x: hidden;
+    `}
+
+    ${media.lessThan('large')`
+      max-width: 1024px;
+    `}
+
+    ${media.lessThan('medium')`
+      max-width: 768px;
+    `}
+
+    ${media.lessThan('small')`
+      max-width: 350px;
+    `}
+
+    .slick-track,
+    .slick-list {
+      width: ${theme.grid.container};
+    }
+
+    .slick-slide > div {
+      height: 80%;
+      width: 80%;
+
+      margin: 0 auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0;
+      transform: translate(0, -50%);
+    }
+
+    .slick-prev {
+      left: -${theme.spacings.small};
+    }
+
+    .slick-next {
+      right: -${theme.spacings.small};
+    }
+
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled {
+      visibility: hidden;
+    }
+
+    .slick-dots {
+      display: inline-flex !important;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      margin-top: ${theme.spacings.small};
+
+      li {
+        background: ${theme.colors.white};
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 ${theme.spacings.xxsmall};
+        cursor: pointer;
+
+        &.slick-active {
+          background: ${theme.colors.primary};
+        }
+      }
+
+      button {
+        opacity: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        cursor: pointer;
+      }
+    }
+  `}
+`
+
+export const TechnologyCard = styled.a`
+  ${({ theme }) => css`
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+    color: ${theme.colors.white};
+    text-decoration: none;
+    border: 1px solid ${theme.colors.darkGray};
+    border-radius: 4px;
+    padding: ${theme.spacings.xxsmall};
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    p {
+      font-size: ${theme.font.sizes.xsmall};
+      font-weight: ${theme.font.bold};
+      margin-top: ${theme.spacings.xxsmall};
+    }
+
+    &:hover {
+      transition: translateX(-50%);
+    }
   `}
 `

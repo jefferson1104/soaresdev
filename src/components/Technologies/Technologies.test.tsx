@@ -1,3 +1,4 @@
+import 'match-media-mock'
 import { render, screen } from 'utils/test-utils'
 
 import Technologies from '.'
@@ -14,10 +15,14 @@ describe('Technologies component', () => {
     })
     expect(checkSectionTitle).toBeInTheDocument()
 
-    const checkCardTitle = screen.getByText('NodeJS')
+    const checkCardTitle = screen.getByRole('heading', {
+      name: /nodejs/i
+    })
     expect(checkCardTitle).toBeInTheDocument()
 
-    const checkCardSubtitle = screen.getByText('BACK-END')
+    const checkCardSubtitle = screen.getByRole('heading', {
+      name: /back-end/i
+    })
     expect(checkCardSubtitle).toBeInTheDocument()
 
     const checkCardParagraph = screen.getByText(
