@@ -342,8 +342,8 @@ export const TechnologyCard = styled.a`
     padding: ${theme.spacings.xxsmall};
 
     img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
 
     p {

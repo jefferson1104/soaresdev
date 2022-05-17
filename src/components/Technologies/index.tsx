@@ -57,7 +57,7 @@ const allTechnologies = [
   { img: 'img/technologies/firebase.svg', description: 'Firebase', link: 'https://firebase.google.com/docs' },
   { img: 'img/technologies/aws.svg', description: 'AWS', link: 'https://docs.aws.amazon.com/' },
   { img: 'img/technologies/azure.svg', description: 'Azure', link: 'https://docs.microsoft.com/pt-br/azure/?product=popular' },
-  { img: 'img/technologies/gcp.svg', description: 'Google Cloud Plataform', link: 'https://cloud.google.com/' },
+  { img: 'img/technologies/gcp.svg', description: 'CGP', link: 'https://cloud.google.com/' },
   { img: 'img/technologies/digital-ocean.svg', description: 'Digital Ocean', link: 'https://www.digitalocean.com/' },
   { img: 'img/technologies/docker.svg', description: 'Docker', link: 'https://docs.docker.com/' },
   { img: 'img/technologies/kubernetes.svg', description: 'Kubernetes', link: 'https://kubernetes.io/pt-br/' },
@@ -74,7 +74,7 @@ const settings: SliderSettings = {
   slidesToScroll: 1,
   arrows: true,
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 900,
   autoplay: true,
   responsive: [
@@ -138,7 +138,7 @@ const Technologies = () => {
             })}
           </S.Cards>
 
-          <S.Technologies>
+          <S.Technologies data-aos="fade-up">
             <Slider settings={settings}>
               {allTechnologies.map((technology, index) => {
                 return (

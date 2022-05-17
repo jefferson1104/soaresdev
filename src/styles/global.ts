@@ -67,6 +67,9 @@ const GlobalStyles: GlobalStyleComponent<
         color: ${theme.colors.white};
       `}
     }
+    a {
+      text-decoration: none;
+    }
   `}
 `
 
