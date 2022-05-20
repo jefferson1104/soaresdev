@@ -3,7 +3,7 @@ import Main from 'components/Main'
 import Services from 'components/Services'
 import About from 'components/About'
 import Technologies from 'components/Technologies'
-// import Portfolio from 'components/Portfolio'
+import Portfolio from 'components/Portfolio'
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Services />
       <About />
       <Technologies />
-      {/* <Portfolio /> */}
+      <Portfolio />
     </Base>
   )
 }

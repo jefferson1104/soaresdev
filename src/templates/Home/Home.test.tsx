@@ -1,3 +1,4 @@
+import 'match-media-mock'
 import { render, screen } from 'utils/test-utils'
 
 import Home from '.'
@@ -45,6 +46,15 @@ jest.mock('components/Technologies', () => {
   }
 })
 
+jest.mock('components/Portfolio', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Portfolio"></div>
+    }
+  }
+})
+
 describe('Home component', () => {
   it('should render correctly', () => {
     render(<Home />)
@@ -60,5 +70,8 @@ describe('Home component', () => {
 
     const checkTechnologies = screen.getByTestId(/Mock Technologies/i)
     expect(checkTechnologies).toBeInTheDocument()
+
+    const checkPortfolio = screen.getByTestId(/Mock Portfolio/i)
+    expect(checkPortfolio).toBeInTheDocument()
   })
 })

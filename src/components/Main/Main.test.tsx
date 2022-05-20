@@ -1,6 +1,4 @@
-// import 'match-media-mock'
-import { render } from 'utils/test-utils'
-import { screen } from '@testing-library/react'
+import { render, screen } from 'utils/test-utils'
 
 import Main from '.'
 
