@@ -139,14 +139,14 @@ const settings: SliderSettings = {
 const Portfolio = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
-    <Container>
+    <Container id="portfolio">
       <S.Wrapper>
         <h2>Portfolio</h2>
         <div>
           {isMobile ? (
             ''
           ) : (
-            <S.MainProjects>
+            <S.MainProjects data-aos="fade-up">
               {mainProjects.map(
                 (project, index) =>
                   project && (
@@ -164,7 +164,7 @@ const Portfolio = () => {
           )}
         </div>
 
-        <S.AllProjects>
+        <S.AllProjects data-aos="fade-up">
           <Slider settings={settings}>
             {allProjects.map(
               (project, index) =>

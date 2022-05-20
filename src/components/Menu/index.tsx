@@ -37,7 +37,7 @@ const Menu = () => {
             <S.MenuLink>Tecnologias</S.MenuLink>
           </Link>
 
-          <Link href="/" passHref>
+          <Link href="#portfolio" passHref>
             <S.MenuLink>Portfolio</S.MenuLink>
           </Link>
 
@@ -54,24 +54,26 @@ const Menu = () => {
             <S.MenuLink>Home</S.MenuLink>
           </Link>
 
-          <Link href="/" passHref>
-            <S.MenuLink>Serviços</S.MenuLink>
+          <Link href="#services" passHref>
+            <S.MenuLink onClick={() => setIsOpen(false)}>Serviços</S.MenuLink>
+          </Link>
+
+          <Link href="#about" passHref>
+            <S.MenuLink onClick={() => setIsOpen(false)}>Sobre</S.MenuLink>
+          </Link>
+
+          <Link href="#technologies" passHref>
+            <S.MenuLink onClick={() => setIsOpen(false)}>
+              Tecnologias
+            </S.MenuLink>
+          </Link>
+
+          <Link href="#portfolio" passHref>
+            <S.MenuLink onClick={() => setIsOpen(false)}>Portfolio</S.MenuLink>
           </Link>
 
           <Link href="/" passHref>
-            <S.MenuLink>Sobre</S.MenuLink>
-          </Link>
-
-          <Link href="/" passHref>
-            <S.MenuLink>Tecnologias</S.MenuLink>
-          </Link>
-
-          <Link href="/" passHref>
-            <S.MenuLink>Portfolio</S.MenuLink>
-          </Link>
-
-          <Link href="/" passHref>
-            <S.MenuLink>Contato</S.MenuLink>
+            <S.MenuLink onClick={() => setIsOpen(false)}>Contato</S.MenuLink>
           </Link>
         </S.MenuNav>
       </S.MenuFull>
