@@ -1,38 +1,77 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css, DefaultTheme } from 'styled-components'
 
-export const Cards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-column-gap: 8rem;
-  grid-row-gap: 8rem;
+export const Cards = styled.div``
 
-  ${media.lessThan('large')`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  `}
-`
+type CardProps = {
+  size: 'normal' | 'small'
+}
 
-export const Card = styled.div`
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  background: rgba(29, 27, 39, 0.1);
-  border-top: 1px solid rgba(46, 47, 66, 0.9);
-  border-left: 1px solid rgba(46, 47, 66, 0.9);
-  border-right: 1px solid rgba(46, 47, 66, 0.5);
-  border-bottom: 1px solid rgba(46, 47, 66, 0.5);
-
-  overflow: hidden;
-  width: 600px;
-  height: 420px;
-  padding: 15px;
-
-  ${media.lessThan('small')`
+const cardModifiers = {
+  small: (theme: DefaultTheme) => css`
     width: 320px;
-    height: 420px;
+    height: 430px;
     padding: 10px;
+
+    border-radius: 10px;
+    background: rgba(29, 27, 39, 0.1);
+    border-top: 1px solid rgba(46, 47, 66, 0.9);
+    border-left: 1px solid rgba(46, 47, 66, 0.9);
+    border-right: 1px solid rgba(46, 47, 66, 0.5);
+    border-bottom: 1px solid rgba(46, 47, 66, 0.5);
+
+    img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-size: ${theme.font.sizes.medium};
+    }
+
+    p {
+      font-size: ${theme.font.sizes.small};
+      height: 100px;
+    }
+  `,
+  normal: (theme: DefaultTheme) => css`
+    width: 600px;
+    height: 450px;
+    padding: 15px;
+
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: rgba(29, 27, 39, 0.1);
+    border-top: 1px solid rgba(46, 47, 66, 0.9);
+    border-left: 1px solid rgba(46, 47, 66, 0.9);
+    border-right: 1px solid rgba(46, 47, 66, 0.5);
+    border-bottom: 1px solid rgba(46, 47, 66, 0.5);
+
+    img {
+      width: 560px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-size: ${theme.font.sizes.large};
+      font-weight: ${theme.font.bold};
+    }
+
+    p {
+      font-size: ${theme.font.sizes.medium};
+      height: 100px;
+    }
+  `
+}
+
+export const Card = styled.div<CardProps>`
+  ${({ theme, size }) => css`
+    ${!!size && cardModifiers[size](theme)};
+
+    overflow: hidden;
   `}
 `
 
@@ -42,56 +81,28 @@ export const CardImage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`
 
-  img {
-    width: 560px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
+export const CardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 
-  ${media.lessThan('small')`
-    img {
-      width: 300px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-  `}
+  height: 100px;
 `
 
 export const CardText = styled.div`
   ${({ theme }) => css`
     margin: ${theme.spacings.xxsmall} 0;
-
-    h1 {
-      font-size: ${theme.font.sizes.large};
-      font-weight: ${theme.font.bold};
-    }
-
-    p {
-      font-size: ${theme.font.sizes.medium};
-    }
-
-    ${media.lessThan('small')`
-      h1 {
-        font-size: ${theme.font.sizes.medium};
-
-      }
-
-      p {
-        font-size: ${theme.font.sizes.small};
-      }
-    `}
+  }
   `}
 `
 
 export const CardButtons = styled.div`
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
-  width: 50%;
-  margin-top: 20px;
 `
 
 export const LinkButton = styled.a`
@@ -102,6 +113,7 @@ export const LinkButton = styled.a`
 
     border-radius: 4px;
 
+    width: 120px;
     padding: 5px;
     background: ${theme.colors.primary};
     color: ${theme.colors.mainBg};

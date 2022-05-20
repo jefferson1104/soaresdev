@@ -18,7 +18,6 @@ export const Content = styled.div`
     h2 {
       font-size: ${theme.font.sizes.huge};
       font-weight: ${theme.font.bold};
-      // margin: 10rem 0;
     }
 
     ${media.lessThan('medium')`

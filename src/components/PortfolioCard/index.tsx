@@ -1,52 +1,53 @@
-import Container from 'components/Container'
 import { Github } from '@styled-icons/boxicons-logos/Github'
 import { World } from '@styled-icons/boxicons-regular/World'
 import * as S from './styles'
 
-type PortfolioCardProps = {
-  name: string
-  description: string
+export type PortfolioCardProps = {
   image: string
+  title: string
+  description: string
   link?: string
-  github: string
+  github?: string
+  size?: 'small' | 'normal'
 }
 
 const PortfolioCard = ({
   image,
-  name,
+  title,
   description,
   link,
-  github
+  github,
+  size = 'normal'
 }: PortfolioCardProps) => {
   return (
-    <Container>
-      <S.Cards data-aos="fade-up">
-        <S.Card>
-          <S.CardImage>
-            <img src={image} alt={name} />
-          </S.CardImage>
+    <S.Card size={size}>
+      <S.CardImage>
+        <img src={image} alt={title} />
+      </S.CardImage>
 
-          <S.CardText>
-            <h1>{name}</h1>
-            <p>{description}</p>
-          </S.CardText>
+      <S.CardContent>
+        <S.CardText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </S.CardText>
 
-          <S.CardButtons>
-            {link && (
-              <S.LinkButton href={link}>
-                <World width={25} />
-                Acesse
-              </S.LinkButton>
-            )}
+        <S.CardButtons>
+          {link && (
+            <S.LinkButton href={link} target="_blank">
+              <World width={25} />
+              Acesse
+            </S.LinkButton>
+          )}
 
-            <S.GithubButton href={github}>
+          {github && (
+            <S.GithubButton href={github} target="_blank">
               <Github width={25} />
               Github
             </S.GithubButton>
-          </S.CardButtons>
-        </S.Card>
-      </S.Cards>
-    </Container>
+          )}
+        </S.CardButtons>
+      </S.CardContent>
+    </S.Card>
   )
 }
 
