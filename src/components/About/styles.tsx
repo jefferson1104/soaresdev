@@ -4,7 +4,7 @@ import media from 'styled-media-query'
 export const Wrapper = styled.section`
   .paralax-image {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,10 +25,10 @@ export const Content = styled.div`
     }
 
     p {
-      font-size: ${theme.font.sizes.medium};
-      line-height: ${theme.spacings.medium};
+      font-size: ${theme.font.sizes.large};
+      line-height: ${theme.spacings.large};
       margin-bottom: ${theme.spacings.xxlarge};
-      color: ${theme.colors.lightGray};
+      color: ${theme.colors.lightBg};
     }
 
     ${media.lessThan('medium')`

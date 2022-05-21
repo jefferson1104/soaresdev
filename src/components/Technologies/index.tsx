@@ -77,6 +77,7 @@ const settings: SliderSettings = {
   infinite: true,
   speed: 900,
   autoplay: true,
+  swipeToSlide: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -105,7 +106,8 @@ const settings: SliderSettings = {
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
-        infinite: true
+        infinite: true,
+
       }
     }
   ],

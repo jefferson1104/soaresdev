@@ -14,9 +14,11 @@ export default {
     normal: 400,
     bold: 600,
     sizes: {
-      xsmall: '1.2rem',
+      xxsmall: '1.2rem',
+      xsmall: '1.4rem',
       small: '1.6rem',
-      medium: '2.0rem',
+      medium: '1.8rem',
+      mediumSmall: '2.0rem',
       large: '2.5rem',
       xlarge: '3rem',
       xxlarge: '3.5rem',
@@ -25,16 +27,15 @@ export default {
   },
   colors: {
     primary: '#4bbecf',
-    secondary: '#F231A5',
+    secondary: '#2E2F42',
     mainBg: '#1d1b27',
     lightBg: '#F2F2F2',
     white: '#FAFAFA',
     black: '#05060c',
     darkBlue: '#030517',
-    lightGray: '#EAEAEA',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42',
-    red: '#FF6347'
+    lightGray: '#b3b3b3',
+    darkGray: '#272530'
   },
   spacings: {
     xxsmall: '0.8rem',
@@ -53,7 +54,7 @@ export default {
     alwaysOnTop: 50
   },
   transition: {
-    default: '0.3s ease-in-out',
+    default: '0.5s all ease-in-out',
     fast: '0.1s ease-in-out'
   }
 } as const

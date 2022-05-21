@@ -4,6 +4,7 @@ import Services from 'components/Services'
 import About from 'components/About'
 import Technologies from 'components/Technologies'
 import Portfolio from 'components/Portfolio'
+import ContactForm from 'components/ContactForm'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Technologies />
       <Portfolio />
+      <ContactForm />
     </Base>
   )
 }

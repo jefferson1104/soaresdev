@@ -7,13 +7,8 @@ export const Wrapper = styled.main`
   justify-content: center;
   align-items: center;
 
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
   width: 100%;
-  height: 100%;
-  max-height: 95rem;
+  height: 100vh;
 
   box-shadow: 0px -50px 80px #1d1b27 inset;
 
@@ -54,14 +49,14 @@ export const MainContent = styled.div`
     }
 
     p {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.mediumSmall};
       line-height: ${theme.spacings.medium};
       margin-bottom: ${theme.spacings.large};
     }
 
     ${media.lessThan('medium')`
       h1 {
-        font-size: ${theme.font.sizes.medium};
+        font-size: ${theme.font.sizes.mediumSmall};
         margin-bottom: ${theme.spacings.small};
       }
 

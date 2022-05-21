@@ -38,13 +38,13 @@ export const MainProjects = styled.div`
 `
 
 export const AllProjects = styled.div`
-  margin-bottom: 700px;
   ${({ theme }) => css`
     display: flex;
     flex-direction: row;
 
     ${media.lessThan('huge')`
-      overflow-x: hidden;
+      overflow: hidden;
+      max-width: 1300px;
     `}
 
     ${media.lessThan('large')`
@@ -62,7 +62,11 @@ export const AllProjects = styled.div`
     .slick-track,
     .slick-list {
       // width: ${theme.grid.container};
-      width: 135rem;
+      width: 140rem;
+
+      ${media.lessThan('huge')`
+        width: 130rem;
+      `}
     }
 
     .slick-slide > div {

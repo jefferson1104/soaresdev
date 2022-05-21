@@ -95,7 +95,7 @@ const settings: SliderSettings = {
   slidesToScroll: 1,
   arrows: false,
   dots: true,
-  infinite: true,
+  infinite: false,
   speed: 900,
   autoplay: false,
   responsive: [

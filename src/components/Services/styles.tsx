@@ -56,10 +56,10 @@ export const ServicesCard = styled.div`
     }
 
     p {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.mediumSmall};
       line-height: ${theme.spacings.medium};
       margin-bottom: ${theme.spacings.xxlarge};
-      color: ${theme.colors.lightGray};
+      color: ${theme.colors.lightBg};
     }
 
     ${media.lessThan('medium')`

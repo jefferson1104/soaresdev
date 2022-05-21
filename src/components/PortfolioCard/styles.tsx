@@ -23,11 +23,11 @@ const cardModifiers = {
       width: 300px;
       height: 200px;
       object-fit: cover;
-      border-radius: 4px;
+      border-radius: ${theme.border.radius};
     }
 
     h1 {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.mediumSmall};
     }
 
     p {
@@ -52,7 +52,7 @@ const cardModifiers = {
       width: 560px;
       height: 220px;
       object-fit: cover;
-      border-radius: 4px;
+      border-radius: ${theme.border.radius};
     }
 
     h1 {
@@ -61,7 +61,7 @@ const cardModifiers = {
     }
 
     p {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.mediumSmall};
       height: 100px;
     }
   `
@@ -111,7 +111,7 @@ export const LinkButton = styled.a`
     align-items: center;
     justify-content: center;
 
-    border-radius: 4px;
+    border-radius: ${theme.border.radius};
 
     width: 120px;
     padding: 5px;
@@ -124,6 +124,10 @@ export const LinkButton = styled.a`
       color: ${theme.colors.primary};
       background: ${theme.colors.mainBg};
     }
+
+    svg {
+      margin-right: 2px;
+    }
   `}
 `
 
@@ -133,17 +137,21 @@ export const GithubButton = styled.a`
     align-items: center;
     justify-content: center;
 
-    border-radius: 4px;
+    border-radius: ${theme.border.radius};
 
     padding: 5px;
-    background: ${theme.colors.lightGray};
+    background: ${theme.colors.lightBg};
     color: ${theme.colors.mainBg};
     transition: 0.5s all ease-in-out;
 
     &:hover {
-      border: 1px solid ${theme.colors.lightGray};
+      border: 1px solid ${theme.colors.lightBg};
       background: ${theme.colors.mainBg};
-      color: ${theme.colors.lightGray};
+      color: ${theme.colors.lightBg};
+    }
+
+    svg {
+      margin-right: 2px;
     }
   `}
 `

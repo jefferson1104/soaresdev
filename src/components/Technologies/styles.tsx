@@ -35,6 +35,10 @@ export const Cards = styled.div`
     grid-column-gap: 15rem;
     margin: ${theme.spacings.xxlarge} 0;
 
+    ${media.lessThan('large')`
+      grid-column-gap: 5rem;
+    `}
+
     ${media.lessThan('medium')`
       display: flex;
       flex-direction: column;
@@ -208,8 +212,8 @@ export const CardContent = styled.div`
 
     p {
       position: relative;
-      font-size: ${theme.font.sizes.medium};
-      color: ${theme.colors.lightGray};
+      font-size: ${theme.font.sizes.mediumSmall};
+      color: ${theme.colors.lightBg};
       font-weight: ${theme.font.light};
       z-index: 2;
       opacity: 0.5;
@@ -224,7 +228,7 @@ export const CardContent = styled.div`
       }
 
       h4 {
-        font-size: ${theme.font.sizes.medium};
+        font-size: ${theme.font.sizes.mediumSmall};
       }
 
       p {
@@ -336,8 +340,8 @@ export const TechnologyCard = styled.a`
     height: 100px;
     color: ${theme.colors.white};
     text-decoration: none;
-    border: 1px solid ${theme.colors.darkGray};
-    border-radius: 4px;
+    border: 1px solid ${theme.colors.secondary};
+    border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
 
     img {
