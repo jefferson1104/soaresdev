@@ -13,7 +13,7 @@ export const Wrapper = styled.main`
   box-shadow: 0px -50px 80px #1d1b27 inset;
 
   ${media.lessThan('medium')`
-    height: 80rem;
+    height: 60rem;
   `}
 `
 

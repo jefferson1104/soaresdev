@@ -2,13 +2,12 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
-  margin: 150px 0;
-
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: ${theme.spacings.huge} 0;
 
     > h2 {
       font-size: ${theme.font.sizes.huge};

@@ -1,12 +1,12 @@
 import Slider, { SliderSettings } from 'components/Slider'
 import { ArrowBackIos as ArrowLeft } from '@styled-icons/material-outlined/ArrowBackIos'
 import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/ArrowForwardIos'
-import { useMediaQuery } from 'react-responsive'
 
 import Container from 'components/Container'
 import PortfolioCard from 'components/PortfolioCard'
 
 import * as S from './styles'
+import { useEffect, useState } from 'react'
 
 const mainProjects = [
   {
@@ -137,7 +137,14 @@ const settings: SliderSettings = {
 }
 
 const Portfolio = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth < 769) {
+      setIsMobile(true)
+    }
+  }, [])
+
   return (
     <Container id="portfolio">
       <S.Wrapper>
@@ -145,9 +152,7 @@ const Portfolio = () => {
 
         <S.PortfolioContent data-aos="fade-up">
           <div>
-            {isMobile ? (
-              ''
-            ) : (
+            {!isMobile && (
               <S.MainProjects>
                 {mainProjects.map(
                   (project, index) =>

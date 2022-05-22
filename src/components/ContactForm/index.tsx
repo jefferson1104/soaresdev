@@ -15,17 +15,17 @@ const ContactForm = () => {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
 
-  console.log('NOME =>', name)
-  console.log('SOBRENOME =>', lastName)
-  console.log('EMAIL =>', email)
-  console.log('PHONE =>', phone)
+  // console.log('NOME =>', name)
+  // console.log('SOBRENOME =>', lastName)
+  // console.log('EMAIL =>', email)
+  // console.log('PHONE =>', phone)
 
   return (
     <S.Wrapper>
-      <h2>Contato</h2>
+      <h2 data-aos="fade-down">Contato</h2>
 
       <Container>
-        <S.FormContainer>
+        <S.FormContainer data-aos="fade-up">
           <S.FormInfo>
             <div className="header">
               <h2>Informações de contato</h2>

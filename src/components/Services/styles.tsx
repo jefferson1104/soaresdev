@@ -7,15 +7,16 @@ export const Wrapper = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: ${theme.spacings.huge} 0;
 
-    h2 {
+    > h2 {
       font-size: ${theme.font.sizes.huge};
       color: ${theme.colors.white};
       margin-bottom: ${theme.spacings.xxlarge};
     }
 
     ${media.lessThan('medium')`
-      h2 {
+      > h2 {
         font-size: ${theme.font.sizes.xlarge};
       }
     `}

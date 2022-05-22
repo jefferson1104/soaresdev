@@ -3,11 +3,13 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
+    margin: ${theme.spacings.huge} 0;
+
     > h2 {
       text-align: center;
       font-size: ${theme.font.sizes.huge};
       font-weight: ${theme.font.bold};
-      margin: ${theme.spacings.xxlarge} 0;
+      margin-bottom: ${theme.spacings.xxlarge};
     }
 
     ${media.lessThan('medium')`

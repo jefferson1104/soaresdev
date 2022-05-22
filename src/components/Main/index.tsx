@@ -6,11 +6,19 @@ import Button from 'components/Button'
 import Container from 'components/Container'
 import Logo from 'components/Logo'
 
-import { useMediaQuery } from 'react-responsive'
 import * as S from './styles'
+import { useState, useEffect } from 'react'
 
 const Main = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  }, [])
 
   return (
     <>
@@ -18,11 +26,11 @@ const Main = () => {
       <S.Wrapper>
         <Container>
           <S.MainContainer>
-            <S.MainLogo data-aos="fade-right">
+            <S.MainLogo data-aos="fade-down">
               {isMobile ? <Logo size="small" /> : <Logo />}
             </S.MainLogo>
 
-            <S.MainContent data-aos="fade-left">
+            <S.MainContent data-aos="fade-up">
               <h1>Desenvolvimento de software</h1>
               <p>
                 Impulsione seu negócio com as melhores tecnologias utilizadas
