@@ -3,23 +3,26 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h2 {
+    > h2 {
+      text-align: center;
       font-size: ${theme.font.sizes.huge};
       font-weight: ${theme.font.bold};
       margin: ${theme.spacings.xxlarge} 0;
     }
 
     ${media.lessThan('medium')`
-      h2 {
+      > h2 {
         font-size: ${theme.font.sizes.xlarge};
       }
     `}
   `}
+`
+
+export const PortfolioContent = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 `
 
 export const MainProjects = styled.div`
@@ -57,23 +60,17 @@ export const AllProjects = styled.div`
 
     ${media.lessThan('small')`
       max-width: 360px;
+      margin-left: 0;
     `}
 
     .slick-track,
     .slick-list {
-      // width: ${theme.grid.container};
-      width: 140rem;
-
-      ${media.lessThan('huge')`
-        width: 130rem;
-      `}
+      width: ${theme.grid.container};
     }
 
     .slick-slide > div {
       height: 100%;
       width: 100%;
-
-      // margin: 50px auto;
     }
 
     .slick-prev,

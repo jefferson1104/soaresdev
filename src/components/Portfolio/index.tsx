@@ -141,13 +141,34 @@ const Portfolio = () => {
   return (
     <Container id="portfolio">
       <S.Wrapper>
-        <h2>Portfolio</h2>
-        <div>
-          {isMobile ? (
-            ''
-          ) : (
-            <S.MainProjects data-aos="fade-up">
-              {mainProjects.map(
+        <h2 data-aos="fade-down">Portfolio</h2>
+
+        <S.PortfolioContent data-aos="fade-up">
+          <div>
+            {isMobile ? (
+              ''
+            ) : (
+              <S.MainProjects>
+                {mainProjects.map(
+                  (project, index) =>
+                    project && (
+                      <PortfolioCard
+                        key={index}
+                        image={project.image}
+                        title={project.title}
+                        description={project.description}
+                        github={project.github}
+                        link={project.link}
+                      />
+                    )
+                )}
+              </S.MainProjects>
+            )}
+          </div>
+
+          <S.AllProjects>
+            <Slider settings={settings}>
+              {allProjects.map(
                 (project, index) =>
                   project && (
                     <PortfolioCard
@@ -157,31 +178,13 @@ const Portfolio = () => {
                       description={project.description}
                       github={project.github}
                       link={project.link}
+                      size="small"
                     />
                   )
               )}
-            </S.MainProjects>
-          )}
-        </div>
-
-        <S.AllProjects data-aos="fade-up">
-          <Slider settings={settings}>
-            {allProjects.map(
-              (project, index) =>
-                project && (
-                  <PortfolioCard
-                    key={index}
-                    image={project.image}
-                    title={project.title}
-                    description={project.description}
-                    github={project.github}
-                    link={project.link}
-                    size="small"
-                  />
-                )
-            )}
-          </Slider>
-        </S.AllProjects>
+            </Slider>
+          </S.AllProjects>
+        </S.PortfolioContent>
       </S.Wrapper>
     </Container>
   )

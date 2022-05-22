@@ -29,10 +29,10 @@ export const FormContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('small')`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   `}
 `
@@ -91,16 +91,12 @@ export const FormInfo = styled.div`
 
 export const Form = styled.form`
   ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
     padding: 20px;
     border-radius: 4px;
     border: 1px solid ${theme.colors.darkGray};
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 
-    ${media.lessThan('medium')`
+    ${media.lessThan('small')`
       padding: 0;
       border-radius:  0;
       border: 0;

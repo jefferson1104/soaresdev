@@ -53,7 +53,7 @@ const allTechnologies = [
   { img: 'img/technologies/mongodb.svg', description: 'MongoDB', link: 'https://www.mongodb.com/docs/' },
   { img: 'img/technologies/mysql.svg', description: 'MySQL', link: 'https://dev.mysql.com/doc/' },
   { img: 'img/technologies/postgresql.svg', description: 'PostgreSQL', link: 'https://www.postgresql.org/docs/' },
-  { img: 'img/technologies/microsoft-sql-server.svg', description: 'Microsoft SQL Server', link: 'https://docs.microsoft.com/pt-br/sql/sql-server/?view=sql-server-ver15' },
+  { img: 'img/technologies/microsoft-sql-server.svg', description: 'Microsoft SQL', link: 'https://docs.microsoft.com/pt-br/sql/sql-server/?view=sql-server-ver15' },
   { img: 'img/technologies/firebase.svg', description: 'Firebase', link: 'https://firebase.google.com/docs' },
   { img: 'img/technologies/aws.svg', description: 'AWS', link: 'https://docs.aws.amazon.com/' },
   { img: 'img/technologies/azure.svg', description: 'Azure', link: 'https://docs.microsoft.com/pt-br/azure/?product=popular' },
@@ -72,12 +72,16 @@ const allTechnologies = [
 const settings: SliderSettings = {
   slidesToShow: 10,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
   dots: false,
   infinite: true,
-  speed: 900,
   autoplay: true,
-  swipeToSlide: true,
+  autoplaySpeed: 2000,
+  speed: 500,
+  draggable: false,
+  lazyLoad: 'ondemand',
+  pauseOnHover: false,
+  swipeToSlide: false,
   responsive: [
     {
       breakpoint: 1024,
@@ -107,7 +111,7 @@ const settings: SliderSettings = {
         arrows: false,
         swipeToSlide: true,
         infinite: true,
-
+        autoplaySpeed: 1000,
       }
     }
   ],
@@ -118,11 +122,10 @@ const settings: SliderSettings = {
 const Technologies = () => {
   return (
     <S.Wrapper id="technologies">
+      <h2 data-aos="fade-down">Tecnologias</h2>
       <Container>
-        <S.Content>
-          <h2 data-aos="fade-up">Tecnologias</h2>
-
-          <S.Cards data-aos="fade-down">
+        <S.Content data-aos="fade-up">
+          <S.Cards >
             {mainTechnologies.map((technology, index) => {
               return (
                 <S.Card key={index}>
@@ -140,7 +143,7 @@ const Technologies = () => {
             })}
           </S.Cards>
 
-          <S.Technologies data-aos="fade-up">
+          <S.Technologies>
             <Slider settings={settings}>
               {allTechnologies.map((technology, index) => {
                 return (

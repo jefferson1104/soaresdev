@@ -13,7 +13,6 @@ const cardModifiers = {
     padding: 10px;
 
     border-radius: 10px;
-    background: rgba(29, 27, 39, 0.1);
     border-top: 1px solid rgba(46, 47, 66, 0.9);
     border-left: 1px solid rgba(46, 47, 66, 0.9);
     border-right: 1px solid rgba(46, 47, 66, 0.5);
@@ -42,7 +41,6 @@ const cardModifiers = {
 
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    background: rgba(29, 27, 39, 0.1);
     border-top: 1px solid rgba(46, 47, 66, 0.9);
     border-left: 1px solid rgba(46, 47, 66, 0.9);
     border-right: 1px solid rgba(46, 47, 66, 0.5);
@@ -72,6 +70,7 @@ export const Card = styled.div<CardProps>`
     ${!!size && cardModifiers[size](theme)};
 
     overflow: hidden;
+    background: rgba(46, 47, 66, 0.3);
   `}
 `
 

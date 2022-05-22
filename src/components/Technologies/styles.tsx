@@ -2,12 +2,6 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
-export const Content = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -28,12 +22,18 @@ export const Content = styled.div`
   `}
 `
 
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 export const Cards = styled.div`
   ${({ theme }) => css`
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 15rem;
-    margin: ${theme.spacings.xxlarge} 0;
+    grid-column-gap: 16rem;
+    margin: ${theme.spacings.large} 0;
 
     ${media.lessThan('large')`
       grid-column-gap: 5rem;
@@ -244,7 +244,7 @@ export const Technologies = styled.div`
     flex-direction: row;
 
     ${media.lessThan('huge')`
-      overflow-x: hidden;
+      overflow: hidden;
     `}
 
     ${media.lessThan('large')`
@@ -261,14 +261,17 @@ export const Technologies = styled.div`
 
     .slick-track,
     .slick-list {
-      width: ${theme.grid.container};
+      width: 1260px;
+    }
+
+    .slick-slide {
+      margin: 0 auto;
     }
 
     .slick-slide > div {
-      height: 80%;
-      width: 80%;
-
-      margin: 0 auto;
+      height: 95%;
+      width: 95%;
+      margin-right: 10px;
     }
 
     .slick-prev,
@@ -345,12 +348,12 @@ export const TechnologyCard = styled.a`
     padding: ${theme.spacings.xxsmall};
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
     }
 
     p {
-      font-size: ${theme.font.sizes.xsmall};
+      font-size: 1rem;
       font-weight: ${theme.font.bold};
       margin-top: ${theme.spacings.xxsmall};
     }
