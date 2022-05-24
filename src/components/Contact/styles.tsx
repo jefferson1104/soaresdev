@@ -60,6 +60,7 @@ export const FormInfo = styled.div`
 
         text-decoration: none;
         color: #fff;
+        transition: ${theme.transition.default};
 
         svg {
           margin-right: 10px;
@@ -68,6 +69,10 @@ export const FormInfo = styled.div`
 
         & + a {
           margin-top: 30px;
+        }
+
+        &:hover {
+          color: ${theme.colors.primary};
         }
       }
     }

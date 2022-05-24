@@ -3,8 +3,6 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.section`
   ${({ theme }) => css`
-    margin: ${theme.spacings.huge} 0;
-
     > h2 {
       text-align: center;
       font-size: ${theme.font.sizes.huge};
