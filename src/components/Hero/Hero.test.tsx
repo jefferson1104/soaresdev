@@ -1,6 +1,6 @@
 import { render, screen } from 'utils/test-utils'
 
-import Main from '.'
+import Hero from '.'
 
 jest.mock('components/Background', () => {
   return {
@@ -20,12 +20,12 @@ jest.mock('components/Container', () => {
   }
 })
 
-describe('Main component', () => {
+describe('Hero component', () => {
   it('should render correctly', () => {
-    render(<Main />)
+    render(<Hero />)
 
-    const mainBackgroundComponent = screen.getByTestId(/Mock Background/i)
-    expect(mainBackgroundComponent).toBeInTheDocument()
+    const heroBackgroundComponent = screen.getByTestId(/Mock Background/i)
+    expect(heroBackgroundComponent).toBeInTheDocument()
 
     const containerComponent = screen.getByTestId(/Mock Container/i)
     expect(containerComponent).toBeInTheDocument()

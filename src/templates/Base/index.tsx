@@ -11,18 +11,18 @@ export type BaseTemplateProps = {
 const Base = ({ children }: BaseTemplateProps) => {
   return (
     <S.Wrapper>
-      <S.BaseContainer>
+      <S.MenuContainer>
         <Menu />
-      </S.BaseContainer>
+      </S.MenuContainer>
 
       <S.Content>{children}</S.Content>
 
-      <ScrollToTop />
       {/* <S.SectionFooter>
         <Container>
           <Footer />
         </Container>
       </S.SectionFooter> */}
+      <ScrollToTop />
     </S.Wrapper>
   )
 }

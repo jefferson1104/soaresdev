@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -17,7 +17,7 @@ export const Wrapper = styled.main`
   `}
 `
 
-export const MainContainer = styled.div`
+export const HeroContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
@@ -31,13 +31,13 @@ export const MainContainer = styled.div`
   `}
 `
 
-export const MainLogo = styled.div`
+export const HeroLogo = styled.div`
   ${({ theme }) => css`
     margin-bottom: ${theme.spacings.large};
   `}
 `
 
-export const MainContent = styled.div`
+export const HeroContent = styled.div`
   ${({ theme }) => css`
     text-align: center;
     max-width: 80rem;

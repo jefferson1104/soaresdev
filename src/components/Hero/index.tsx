@@ -9,7 +9,7 @@ import Logo from 'components/Logo'
 import * as S from './styles'
 import { useState, useEffect } from 'react'
 
-const Main = () => {
+const Hero = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -25,12 +25,12 @@ const Main = () => {
       <Background />
       <S.Wrapper>
         <Container>
-          <S.MainContainer>
-            <S.MainLogo data-aos="fade-down">
+          <S.HeroContainer>
+            <S.HeroLogo data-aos="fade-down">
               {isMobile ? <Logo size="small" /> : <Logo />}
-            </S.MainLogo>
+            </S.HeroLogo>
 
-            <S.MainContent data-aos="fade-up">
+            <S.HeroContent data-aos="fade-up">
               <h1>Desenvolvimento de software</h1>
               <p>
                 Impulsione seu negócio com as melhores tecnologias utilizadas
@@ -43,12 +43,12 @@ const Main = () => {
                   Saiba mais
                 </Button>
               </Link>
-            </S.MainContent>
-          </S.MainContainer>
+            </S.HeroContent>
+          </S.HeroContainer>
         </Container>
       </S.Wrapper>
     </>
   )
 }
 
-export default Main
+export default Hero

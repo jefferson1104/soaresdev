@@ -1,12 +1,13 @@
+import { useEffect, useState } from 'react'
+
+import Container from 'components/Container'
 import Slider, { SliderSettings } from 'components/Slider'
+import PortfolioCard from 'components/PortfolioCard'
+
 import { ArrowBackIos as ArrowLeft } from '@styled-icons/material-outlined/ArrowBackIos'
 import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/ArrowForwardIos'
 
-import Container from 'components/Container'
-import PortfolioCard from 'components/PortfolioCard'
-
 import * as S from './styles'
-import { useEffect, useState } from 'react'
 
 const mainProjects = [
   {
@@ -146,10 +147,9 @@ const Portfolio = () => {
   }, [])
 
   return (
-    <Container id="portfolio">
-      <S.Wrapper>
-        <h2 data-aos="fade-down">Portfolio</h2>
-
+    <S.Wrapper id="portfolio">
+      <h2 data-aos="fade-down">Portfolio</h2>
+      <Container>
         <S.PortfolioContent data-aos="fade-up">
           <div>
             {!isMobile && (
@@ -190,8 +190,8 @@ const Portfolio = () => {
             </Slider>
           </S.AllProjects>
         </S.PortfolioContent>
-      </S.Wrapper>
-    </Container>
+      </Container>
+    </S.Wrapper>
   )
 }
 

@@ -34,9 +34,9 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <Container>
-      <S.Wrapper id="services">
-        <h2 data-aos="fade-up">Serviços</h2>
+    <S.Wrapper id="services">
+      <h2 data-aos="fade-up">Serviços</h2>
+      <Container>
         <S.ServicesContent data-aos="fade-down">
           {servicesData &&
             servicesData.map((service) => {
@@ -49,8 +49,8 @@ const Services = () => {
               )
             })}
         </S.ServicesContent>
-      </S.Wrapper>
-    </Container>
+      </Container>
+    </S.Wrapper>
   )
 }
 

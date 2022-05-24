@@ -6,19 +6,19 @@ import Container from 'components/Container'
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
+  // justify-content: space-between;
+  // height: 100vh;
 `
 
-export const BaseContainer = styled(Container)`
+export const MenuContainer = styled(Container).attrs({ as: 'header' })`
   ${media.greaterThan('small')`
     max-width: 185rem;
   `}
 `
 
-export const Content = styled.div`
+export const Content = styled.main`
   ${({ theme }) => css`
-    flex: 1 0 auto;
+    // flex: 1 0 auto;
     // margin-top: ${theme.spacings.xxlarge};
   `}
 `

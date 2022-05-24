@@ -1,20 +1,20 @@
 import Base from 'templates/Base'
-import Main from 'components/Main'
+import Hero from 'components/Hero'
 import Services from 'components/Services'
 import About from 'components/About'
 import Technologies from 'components/Technologies'
 import Portfolio from 'components/Portfolio'
-import ContactForm from 'components/ContactForm'
+import Contact from 'components/Contact'
 
 const Home = () => {
   return (
     <Base>
-      <Main />
+      <Hero />
       <Services />
       <About />
       <Technologies />
       <Portfolio />
-      <ContactForm />
+      <Contact />
     </Base>
   )
 }
