@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react'
-
 import Container from 'components/Container'
+import MediaMatch from 'components/MediaMatch'
 import Slider, { SliderSettings } from 'components/Slider'
 import PortfolioCard from 'components/PortfolioCard'
 
@@ -138,21 +137,13 @@ const settings: SliderSettings = {
 }
 
 const Portfolio = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.innerWidth < 769) {
-      setIsMobile(true)
-    }
-  }, [])
-
   return (
     <S.Wrapper id="portfolio">
       <h2 data-aos="fade-down">Portfolio</h2>
       <Container>
         <S.PortfolioContent data-aos="fade-up">
           <div>
-            {!isMobile && (
+            <MediaMatch greaterThan="medium">
               <S.MainProjects>
                 {mainProjects.map(
                   (project, index) =>
@@ -168,7 +159,7 @@ const Portfolio = () => {
                     )
                 )}
               </S.MainProjects>
-            )}
+            </MediaMatch>
           </div>
 
           <S.AllProjects>

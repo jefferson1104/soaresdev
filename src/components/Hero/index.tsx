@@ -2,24 +2,14 @@ import Link from 'next/link'
 import { ArrowheadRightOutline } from '@styled-icons/evaicons-outline'
 
 import Background from 'components/Background'
-import Button from 'components/Button'
 import Container from 'components/Container'
+import MediaMatch from 'components/MediaMatch'
 import Logo from 'components/Logo'
+import Button from 'components/Button'
 
 import * as S from './styles'
-import { useState, useEffect } from 'react'
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true)
-    } else {
-      setIsMobile(false)
-    }
-  }, [])
-
   return (
     <>
       <Background />
@@ -27,7 +17,13 @@ const Hero = () => {
         <Container>
           <S.HeroContainer>
             <S.HeroLogo data-aos="fade-down">
-              {isMobile ? <Logo size="small" /> : <Logo />}
+              <MediaMatch lessThan="medium">
+                <Logo size="small" />
+              </MediaMatch>
+
+              <MediaMatch greaterThan="medium">
+                <Logo />
+              </MediaMatch>
             </S.HeroLogo>
 
             <S.HeroContent data-aos="fade-up">
