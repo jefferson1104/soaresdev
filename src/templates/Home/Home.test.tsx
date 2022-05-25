@@ -10,11 +10,11 @@ jest.mock('templates/Base', () => ({
   }
 }))
 
-jest.mock('components/Main', () => {
+jest.mock('components/Hero', () => {
   return {
     __esModule: true,
     default: function Mock() {
-      return <div data-testid="Mock Main"></div>
+      return <div data-testid="Mock Hero"></div>
     }
   }
 })
@@ -59,8 +59,8 @@ describe('Home component', () => {
   it('should render correctly', () => {
     render(<Home />)
 
-    const checkMainComponent = screen.getByTestId(/Mock Main/i)
-    expect(checkMainComponent).toBeInTheDocument()
+    const checkHeroComponent = screen.getByTestId(/Mock Hero/i)
+    expect(checkHeroComponent).toBeInTheDocument()
 
     const checkServicesComponent = screen.getByTestId(/Mock Services/i)
     expect(checkServicesComponent).toBeInTheDocument()

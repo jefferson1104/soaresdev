@@ -23,7 +23,7 @@ describe('Button component', () => {
 
     expect(button).toHaveStyle({
       height: '3rem',
-      'font-size': '1.2rem'
+      'font-size': '1.4rem'
     })
   })
 
@@ -35,7 +35,7 @@ describe('Button component', () => {
     expect(button).toHaveStyle({
       height: '5rem',
       padding: '0.8rem 4.8rem',
-      'font-size': '2.0rem'
+      'font-size': '1.8rem'
     })
   })
 

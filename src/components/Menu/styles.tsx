@@ -5,7 +5,7 @@ type MenuFullProps = {
   isOpen: boolean
 }
 
-export const Wrapper = styled.nav<MenuFullProps>`
+export const Wrapper = styled.section<MenuFullProps>`
   ${({ theme, isOpen }) => css`
     display: flex;
     align-items: center;
