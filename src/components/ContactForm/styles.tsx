@@ -101,12 +101,20 @@ export const Input = styled.input`
 `
 
 export const TextareaContainer = styled.div`
-  width: 100%;
-  position: relative;
-  margin-bottom: 20px;
+  ${({ theme }) => css`
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
 
-  ${media.lessThan('medium')`
-    width: 350px;
+    &::placeholder {
+      font-size: ${theme.font.sizes.small};
+      opacity: 1;
+      transition: ${theme.transition.default};
+    }
+
+    ${media.lessThan('medium')`
+      width: 350px;
+    `}
   `}
 `
 
