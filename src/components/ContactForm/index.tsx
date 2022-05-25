@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { SendPlane } from '@styled-icons/remix-fill/SendPlane'
 
 import * as S from './styles'
+import Button from 'components/Button'
 
 const ContactForm = () => {
   const [isActive, setIsActive] = useState(false)
@@ -95,14 +96,15 @@ const ContactForm = () => {
         </S.Label>
       </S.TextareaContainer>
 
-      <S.ButtonForm
+      <Button
         type="submit"
+        fullWidth
+        icon={<SendPlane />}
         // disabled={comment.length === 0 || isSendingFeedback}
       >
         {/* {isSendingFeedback ? <Loading /> : 'Send feedback'} */}
-        <SendPlane size={20} />
         Enviar
-      </S.ButtonForm>
+      </Button>
     </S.Form>
   )
 }

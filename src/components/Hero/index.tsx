@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import { ArrowheadRightOutline } from '@styled-icons/evaicons-outline'
+// import Link from 'next/link'
+// import { ArrowheadRightOutline } from '@styled-icons/evaicons-outline'
 
 import Background from 'components/Background'
 import Container from 'components/Container'
 import MediaMatch from 'components/MediaMatch'
 import Logo from 'components/Logo'
-import Button from 'components/Button'
+// import Button from 'components/Button'
 
 import * as S from './styles'
 
@@ -34,11 +34,11 @@ const Hero = () => {
                 empresas e empreendedores em soluções tecnológicas, criando
                 produtos de software inovadores.
               </p>
-              <Link href="#services">
+              {/* <Link href="#services">
                 <Button as="a" icon={<ArrowheadRightOutline />}>
                   Saiba mais
                 </Button>
-              </Link>
+              </Link> */}
             </S.HeroContent>
           </S.HeroContainer>
         </Container>

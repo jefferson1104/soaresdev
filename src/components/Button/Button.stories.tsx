@@ -24,16 +24,28 @@ Default.args = {
 export const withIcon: Story = (args) => <Button {...args} />
 
 withIcon.args = {
-  size: 'small',
-  children: 'My Button',
+  children: 'My button',
   icon: <User />
+}
+
+export const withSmall: Story = (args) => <Button {...args} />
+
+withSmall.args = {
+  children: 'My button',
+  size: 'small'
+}
+
+export const withSecondaryColor: Story = (args) => <Button {...args} />
+
+withSecondaryColor.args = {
+  children: 'My button',
+  color: 'secondary'
 }
 
 export const asLink: Story = (args) => <Button {...args} />
 
 asLink.args = {
-  size: 'large',
-  children: 'My Button',
+  children: 'Link button',
   as: 'a',
   href: '/link'
 }

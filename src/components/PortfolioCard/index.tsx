@@ -1,5 +1,8 @@
+import Button from 'components/Button'
+
 import { Github } from '@styled-icons/boxicons-logos/Github'
 import { World } from '@styled-icons/boxicons-regular/World'
+
 import * as S from './styles'
 
 export type PortfolioCardProps = {
@@ -33,17 +36,27 @@ const PortfolioCard = ({
 
         <S.CardButtons>
           {link && (
-            <S.LinkButton href={link} target="_blank">
-              <World width={25} />
+            <Button
+              as="a"
+              href={link}
+              target="_blank"
+              color="primary"
+              icon={<World />}
+            >
               Acesse
-            </S.LinkButton>
+            </Button>
           )}
 
           {github && (
-            <S.GithubButton href={github} target="_blank">
-              <Github width={25} />
+            <Button
+              as="a"
+              href={github}
+              target="_blank"
+              color="secondary"
+              icon={<Github />}
+            >
               Github
-            </S.GithubButton>
+            </Button>
           )}
         </S.CardButtons>
       </S.CardContent>

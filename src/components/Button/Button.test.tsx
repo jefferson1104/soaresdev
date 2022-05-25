@@ -10,9 +10,8 @@ describe('Button component', () => {
     const button = screen.getByRole('button', { name: /Buy now/i })
 
     expect(button).toHaveStyle({
-      height: '4rem',
-      padding: '0.8rem 3.2rem',
-      'font-size': '1.6rem'
+      padding: '0.5rem',
+      fontSize: '1.8rem'
     })
   })
 
@@ -22,20 +21,8 @@ describe('Button component', () => {
     const button = screen.getByRole('button', { name: /Buy now/i })
 
     expect(button).toHaveStyle({
-      height: '3rem',
-      'font-size': '1.4rem'
-    })
-  })
-
-  it('should render the large size', () => {
-    render(<Button size="large">Buy now</Button>)
-
-    const button = screen.getByRole('button', { name: /Buy now/i })
-
-    expect(button).toHaveStyle({
-      height: '5rem',
-      padding: '0.8rem 4.8rem',
-      'font-size': '1.8rem'
+      padding: '0.5rem',
+      fontSize: '1.4rem'
     })
   })
 
@@ -57,17 +44,6 @@ describe('Button component', () => {
 
     expect(button).toBeInTheDocument()
     expect(icon).toBeInTheDocument()
-  })
-
-  it('should render a minimal version', () => {
-    render(
-      <Button icon={<User data-testid="icon" />} minimal>
-        Buy now
-      </Button>
-    )
-
-    const button = screen.getByRole('button', { name: /buy now/i })
-    expect(button).toHaveStyleRule('filter', 'none', { modifier: ':hover' })
   })
 
   it('should render a disabled button', () => {

@@ -48,6 +48,10 @@ export default {
     huge: '12rem',
     super: '20rem'
   },
+  paddings: {
+    small: '0.5rem',
+    medium: '1rem'
+  },
   layers: {
     base: 10,
     menu: 20,
