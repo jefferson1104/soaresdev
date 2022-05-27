@@ -67,3 +67,37 @@ export const HeroContent = styled.div`
     `}
   `}
 `
+
+export const ButtonSeeMore = styled.a`
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    color: ${theme.colors.white};
+
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: auto;
+      animation: move-wheel 1s linear infinite;
+    }
+
+    @keyframes move-wheel {
+      0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(1.5rem);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+    }
+  `}
+`

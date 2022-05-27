@@ -62,13 +62,15 @@ export const FormInfo = styled.div`
         color: #fff;
         transition: ${theme.transition.default};
 
+        max-width: 320px;
+
         svg {
           margin-right: 10px;
           color: ${theme.colors.primary};
         }
 
         & + a {
-          margin-top: 30px;
+          margin-top: 45px;
         }
 
         &:hover {
