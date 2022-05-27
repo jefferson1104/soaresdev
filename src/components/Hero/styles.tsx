@@ -57,12 +57,13 @@ export const HeroContent = styled.div`
     ${media.lessThan('medium')`
       h1 {
         font-size: ${theme.font.sizes.mediumSmall};
-        margin-bottom: ${theme.spacings.small};
+        margin-bottom: ${theme.spacings.xxsmall};
       }
 
       p {
         font-size: ${theme.font.sizes.small};
         line-height: ${theme.spacings.small};
+        margin-bottom: ${theme.spacings.xxsmall};
       }
     `}
   `}
@@ -73,6 +74,7 @@ export const ButtonSeeMore = styled.a`
     display: flex;
     flex-direction: column;
     color: ${theme.colors.white};
+    font-weight: ${theme.font.bold};
 
     span {
       display: flex;
