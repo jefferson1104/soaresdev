@@ -78,8 +78,7 @@ export const ButtonSeeMore = styled.a`
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      margin: auto;
+      margin: 0 auto;
       animation: move-wheel 1s linear infinite;
     }
 

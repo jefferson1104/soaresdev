@@ -71,6 +71,23 @@ const GlobalStyles: GlobalStyleComponent<
       text-decoration: none;
     }
   `}
+
+  /* CUSTOM SCROLLBAR */
+  body::-webkit-scrollbar {
+    width: .6rem;
+    height: .6rem;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #2E2F42;
+    // box-shadow: inset 0.05em 0 0 #838383;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #4bbecf;
+    border-radius: 0.5rem;
+    box-shadow: inset 0.5rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset -0.5rem -0.1rem -0.1rem  rgba(0, 0, 0, 0.3);
+  }
 `
 
 export default GlobalStyles
