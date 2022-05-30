@@ -1,16 +1,6 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const FormLoading = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  ${media.lessThan('small')`
-    margin: 40px 0;
-  `}
-`
-
 export const Form = styled.form`
   ${({ theme }) => css`
     padding: 20px;
@@ -47,66 +37,6 @@ export const InputContainer = styled.div`
     width: 350px;
   `}
 `
-
-// export const Label = styled.label`
-//   ${({ theme }) => css`
-//     position: absolute;
-//     left: 10px;
-//     top: 14px;
-//     transition: all 0.2s;
-//     padding: 0 2px;
-//     z-index: 1;
-//     color: ${theme.colors.darkBlue};
-//     opacity: 0;
-
-//     &::before {
-//       content: '';
-//       height: 5px;
-//       background: ${theme.colors.darkGray};
-//       position: absolute;
-//       left: 0px;
-//       top: 10px;
-//       width: 100%;
-//       z-index: -1;
-//     }
-//   `}
-// `
-
-// export const Input = styled.input`
-//   ${({ theme }) => css`
-//     padding: ${theme.spacings.xxsmall};
-//     width: 100%;
-//     height: 100%;
-//     border: 2px solid ${theme.colors.secondary};
-//     background: ${theme.colors.darkGray};
-//     border-radius: ${theme.border.radius};
-//     font-size: ${theme.font.sizes.medium};
-//     outline: none;
-//     transition: ${theme.transition.default};
-//     color: ${theme.colors.white};
-
-//     &:focus {
-//       border: 2px solid ${theme.colors.primary};
-//     }
-
-//     &:focus + .filled {
-//       top: -10px;
-//       color: ${theme.colors.primary};
-//       font-size: ${theme.font.sizes.xsmall};
-//       opacity: 1;
-//     }
-
-//     &::placeholder {
-//       font-size: ${theme.font.sizes.small};
-//       opacity: 1;
-//       transition: ${theme.transition.default};
-//     }
-
-//     &:focus::placeholder {
-//       opacity: 1;
-//     }
-//   `}
-// `
 
 export const TextareaContainer = styled.div`
   ${({ theme }) => css`
@@ -184,5 +114,36 @@ export const ButtonForm = styled.button`
     ${media.lessThan('medium')`
       width: 350px;
     `}
+  `}
+`
+
+export const FormLoading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ${media.lessThan('small')`
+    margin: 40px 0;
+  `}
+`
+
+export const FormSuccess = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ${media.lessThan('small')`
+    margin: 40px 0;
+  `}
+`
+
+export const FormError = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: ${theme.spacings.xsmall};
+    color: ${theme.colors.red};
   `}
 `
