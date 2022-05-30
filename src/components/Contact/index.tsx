@@ -1,6 +1,7 @@
 import { Whatsapp as WhatsappIcon } from '@styled-icons/icomoon/Whatsapp'
 import { Email as EmailIcon } from '@styled-icons/material-outlined/Email'
 import { Location as LocationIcon } from '@styled-icons/entypo/Location'
+
 import Container from 'components/Container'
 import ContactForm from 'components/ContactForm'
 

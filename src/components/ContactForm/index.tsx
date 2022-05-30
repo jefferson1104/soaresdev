@@ -6,12 +6,13 @@ import * as S from './styles'
 import Button from 'components/Button'
 import Input from 'components/Input'
 import Textarea from 'components/Textarea'
+import { api } from 'utils/api'
 
 type FieldErrors = {
   [key: string]: string
 }
 
-type FormData = {
+type FieldsData = {
   name: string
   lastname: string
   email: string
@@ -83,14 +84,14 @@ const ContactForm = () => {
   }
 
   // método para validar os campos do formulário
-  function formFieldsValidate(values: FormData) {
+  function formFieldsValidate(values: FieldsData) {
     const schema = Joi.object(fieldsValidations)
 
     return getFieldErrors(schema.validate(values, { abortEarly: false }))
   }
 
   // envia os dados do formulário para a api se nao houver erros
-  function handleSubmit(event: FormEvent) {
+  async function handleSubmit(event: FormEvent) {
     event.preventDefault()
 
     const errors = formFieldsValidate(values)
@@ -99,17 +100,24 @@ const ContactForm = () => {
       return console.log('TEM ERRO')
     }
 
-    console.log('DADOS ENVIADOS')
-    console.log(values)
+    try {
+      const response = await api.post('/contact', {
+        values
+      })
 
-    setFieldError({})
-    setValues({
-      name: '',
-      lastname: '',
-      email: '',
-      phone: '',
-      message: ''
-    })
+      setFieldError({})
+      setValues({
+        name: '',
+        lastname: '',
+        email: '',
+        phone: '',
+        message: ''
+      })
+
+      console.log('RESPONSE DO ENVIO DE EMAIL', response.data)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   return (
@@ -143,7 +151,7 @@ const ContactForm = () => {
           <Input
             id="email"
             type="text"
-            placeholder="email@exemplo.com"
+            placeholder="Email"
             autoComplete="off"
             onInputChange={(v) => handleInput('email', v)}
             error={fieldError?.email}
@@ -156,7 +164,7 @@ const ContactForm = () => {
             id="phone"
             type="tel"
             inputMode="numeric"
-            placeholder="(11) 91234-5678"
+            placeholder="Celular"
             autoComplete="off"
             onInputChange={(v) => handleInput('phone', v)}
             error={fieldError?.phone}
