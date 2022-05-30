@@ -1,7 +1,15 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.main``
+export const FormLoading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ${media.lessThan('small')`
+    margin: 40px 0;
+  `}
+`
 
 export const Form = styled.form`
   ${({ theme }) => css`

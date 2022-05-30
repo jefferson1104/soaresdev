@@ -7,6 +7,7 @@ import Button from 'components/Button'
 import Input from 'components/Input'
 import Textarea from 'components/Textarea'
 import { api } from 'utils/api'
+import Loading from 'components/Loading'
 
 type FieldErrors = {
   [key: string]: string
@@ -54,6 +55,7 @@ const fieldsValidations = {
 }
 
 const ContactForm = () => {
+  const [isLoading, setIsLoading] = useState(false)
   const [fieldError, setFieldError] = useState<FieldErrors>({})
   const [values, setValues] = useState({
     name: '',
@@ -97,7 +99,7 @@ const ContactForm = () => {
     const errors = formFieldsValidate(values)
     if (Object.keys(errors).length) {
       setFieldError(errors)
-      return console.log('TEM ERRO')
+      setIsLoading(false)
     }
 
     try {
@@ -114,87 +116,97 @@ const ContactForm = () => {
         message: ''
       })
 
-      console.log('RESPONSE DO ENVIO DE EMAIL', response.data)
+      if (response.data === true) {
+        setIsLoading(false)
+      }
     } catch (err) {
       console.log(err)
     }
   }
 
   return (
-    <S.Form onSubmit={(e) => handleSubmit(e)}>
-      <S.Inputs>
-        <S.InputContainer>
-          <Input
-            id="name"
-            type="text"
-            placeholder="Nome"
-            autoComplete="off"
-            onInputChange={(v) => handleInput('name', v)}
-            error={fieldError?.name}
-            value={values.name}
-          />
-        </S.InputContainer>
+    <>
+      {isLoading ? (
+        <S.FormLoading>
+          <Loading text="enviando" />
+        </S.FormLoading>
+      ) : (
+        <S.Form onSubmit={(e) => handleSubmit(e)}>
+          <S.Inputs>
+            <S.InputContainer>
+              <Input
+                id="name"
+                type="text"
+                placeholder="Nome"
+                autoComplete="off"
+                onInputChange={(v) => handleInput('name', v)}
+                error={fieldError?.name}
+                value={values.name}
+              />
+            </S.InputContainer>
 
-        <S.InputContainer>
-          <Input
-            id="lastname"
-            type="text"
-            placeholder="Sobrenome"
-            autoComplete="off"
-            onInputChange={(v) => handleInput('lastname', v)}
-            error={fieldError?.lastname}
-            value={values.lastname}
-          />
-        </S.InputContainer>
+            <S.InputContainer>
+              <Input
+                id="lastname"
+                type="text"
+                placeholder="Sobrenome"
+                autoComplete="off"
+                onInputChange={(v) => handleInput('lastname', v)}
+                error={fieldError?.lastname}
+                value={values.lastname}
+              />
+            </S.InputContainer>
 
-        <S.InputContainer>
-          <Input
-            id="email"
-            type="text"
-            placeholder="Email"
-            autoComplete="off"
-            onInputChange={(v) => handleInput('email', v)}
-            error={fieldError?.email}
-            value={values.email}
-          />
-        </S.InputContainer>
+            <S.InputContainer>
+              <Input
+                id="email"
+                type="text"
+                placeholder="Email"
+                autoComplete="off"
+                onInputChange={(v) => handleInput('email', v)}
+                error={fieldError?.email}
+                value={values.email}
+              />
+            </S.InputContainer>
 
-        <S.InputContainer>
-          <Input
-            id="phone"
-            type="tel"
-            inputMode="numeric"
-            placeholder="Celular"
-            autoComplete="off"
-            onInputChange={(v) => handleInput('phone', v)}
-            error={fieldError?.phone}
-            value={values.phone}
-          />
-        </S.InputContainer>
-      </S.Inputs>
+            <S.InputContainer>
+              <Input
+                id="phone"
+                type="tel"
+                inputMode="numeric"
+                placeholder="Celular"
+                autoComplete="off"
+                onInputChange={(v) => handleInput('phone', v)}
+                error={fieldError?.phone}
+                value={values.phone}
+              />
+            </S.InputContainer>
+          </S.Inputs>
 
-      <S.TextareaContainer>
-        <Textarea
-          id="message"
-          placeholder="Mensagem"
-          autoComplete="off"
-          rows={5}
-          onInputChange={(v) => handleInput('message', v)}
-          error={fieldError?.message}
-          value={values.message}
-        />
-      </S.TextareaContainer>
+          <S.TextareaContainer>
+            <Textarea
+              id="message"
+              placeholder="Mensagem"
+              autoComplete="off"
+              rows={5}
+              onInputChange={(v) => handleInput('message', v)}
+              error={fieldError?.message}
+              value={values.message}
+            />
+          </S.TextareaContainer>
 
-      <Button
-        type="submit"
-        fullWidth
-        icon={<SendPlane />}
-        // disabled={comment.length === 0 || isSendingFeedback}
-      >
-        {/* {isSendingFeedback ? <Loading /> : 'Send feedback'} */}
-        Enviar
-      </Button>
-    </S.Form>
+          <Button
+            type="submit"
+            fullWidth
+            icon={<SendPlane />}
+            // disabled={comment.length === 0 || isSendingFeedback}
+          >
+            {/* {isSendingFeedback ? <Loading /> : 'Send feedback'} */}
+            Enviar
+          </Button>
+        </S.Form>
+      )}
+    </>
   )
 }
 
