@@ -41,7 +41,7 @@ const Menu = () => {
             <S.MenuLink>Portfolio</S.MenuLink>
           </Link>
 
-          <Link href="/" passHref>
+          <Link href="#contact" passHref>
             <S.MenuLink>Contato</S.MenuLink>
           </Link>
         </S.MenuNav>
@@ -72,7 +72,7 @@ const Menu = () => {
             <S.MenuLink onClick={() => setIsOpen(false)}>Portfolio</S.MenuLink>
           </Link>
 
-          <Link href="/" passHref>
+          <Link href="#contact" passHref>
             <S.MenuLink onClick={() => setIsOpen(false)}>Contato</S.MenuLink>
           </Link>
         </S.MenuNav>

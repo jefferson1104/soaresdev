@@ -9,7 +9,7 @@ import * as S from './styles'
 
 const Contact = () => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="contact">
       <h2 data-aos="fade-down">Contato</h2>
       <Container>
         <S.FormContainer data-aos="fade-up">
