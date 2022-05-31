@@ -1,6 +1,7 @@
 import { FormEvent, useState } from 'react'
+import dynamic from 'next/dynamic'
 import Joi from 'joi'
-import Lottie from 'react-lottie'
+
 import { api } from 'utils/api'
 
 import Button from 'components/Button'
@@ -10,7 +11,13 @@ import Loading from 'components/Loading'
 
 import animationData from 'assets/lotties/email-successfully-sent.json'
 import { SendPlane } from '@styled-icons/remix-fill/SendPlane'
+
 import * as S from './styles'
+import { AnimationLottieParams } from 'components/AnimationLottie'
+
+const AnimationLottie = dynamic(() => import('components/AnimationLottie'), {
+  ssr: false
+}) as React.FC<AnimationLottieParams>
 
 type FieldErrors = {
   [key: string]: string
@@ -157,7 +164,11 @@ const ContactForm = () => {
         <>
           {sentMessage ? (
             <S.FormSuccess>
-              <Lottie width={350} height={350} options={animationOptions} />
+              <AnimationLottie
+                width={350}
+                height={350}
+                options={animationOptions}
+              />
             </S.FormSuccess>
           ) : (
             <S.Form onSubmit={(e) => handleSubmit(e)}>
