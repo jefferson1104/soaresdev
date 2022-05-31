@@ -14,15 +14,16 @@ const Contact = () => {
       <Container>
         <S.FormContainer data-aos="fade-up">
           <S.FormInfo>
-            <div className="header">
-              <h2>Informações de contato</h2>
+            <div className="infos">
+              <h3>Informações de contato</h3>
               <p>
                 preencha o formulário e nossa equipe entrará em contato com você
-                em até 24 horas.
+                em até 24 horas. Fique a vontade também para nos enviar
+                sugestões ou reclamações, sua opinião nos interessa.
               </p>
             </div>
 
-            <div className="infos">
+            <div className="contact-options">
               <a href="https://wa.me/+5511958002292">
                 <WhatsappIcon width={30} /> +55 11 95800-2292
               </a>

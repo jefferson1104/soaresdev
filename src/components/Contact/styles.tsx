@@ -42,8 +42,8 @@ export const FormInfo = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    .header {
-      h2 {
+    .infos {
+      h3 {
         font-size: ${theme.font.sizes.xlarge};
       }
 
@@ -53,7 +53,9 @@ export const FormInfo = styled.div`
       }
     }
 
-    .infos {
+    .contact-options {
+      margin: 20px 0;
+
       a {
         display: flex;
         align-items: center;
@@ -80,10 +82,8 @@ export const FormInfo = styled.div`
     }
 
     ${media.lessThan('medium')`
-      .header {
-        margin-bottom: 20px;
-
-        h2 {
+      .infos {
+        h3 {
           font-size: ${theme.font.sizes.large};
         }
 
