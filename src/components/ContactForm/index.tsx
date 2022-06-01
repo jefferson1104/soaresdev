@@ -32,21 +32,30 @@ type FieldsData = {
 }
 
 const fieldsValidations = {
-  name: Joi.string().min(3).required().messages({
-    'string.empty': 'Você precisa digitar um nome',
-    'string.min': 'Digite um nome válido'
-  }),
-  lastname: Joi.string().min(3).required().messages({
-    'string.empty': 'Você precisa digitar um sobrenome',
-    'string.min': 'Digite um sobrenome válido'
-  }),
+  name: Joi.string()
+    .min(3)
+    .required()
+    .messages({
+      'string.empty': 'Você precisa digitar um nome',
+      'string.min': 'Digite um nome válido'
+    })
+    .trim(),
+  lastname: Joi.string()
+    .min(3)
+    .required()
+    .messages({
+      'string.empty': 'Você precisa digitar um sobrenome',
+      'string.min': 'Digite um sobrenome válido'
+    })
+    .trim(),
   email: Joi.string()
     .email({ tlds: { allow: false } })
     .required()
     .messages({
       'string.empty': 'Você precisa digitar um email',
       'string.email': 'Digite um email válido'
-    }),
+    })
+    .trim(),
   // phone: Joi.string().pattern(new RegExp(pattern)).messages({
   //   'string.empty': 'phone invalido mano',
   //   'string.email': 'Digite um email válido'
@@ -57,11 +66,16 @@ const fieldsValidations = {
       'string.empty': 'Você precisa digitar um número de celular',
       'string.pattern.base': 'Digite o DDD e o número de celular'
     })
-    .required(),
-  message: Joi.string().min(10).required().messages({
-    'string.empty': 'Você precisa digitar uma mensagem',
-    'string.min': 'A mensagem deve conter no minimo 10 caracteres'
-  })
+    .required()
+    .trim(),
+  message: Joi.string()
+    .min(10)
+    .required()
+    .messages({
+      'string.empty': 'Você precisa digitar uma mensagem',
+      'string.min': 'A mensagem deve conter no minimo 10 caracteres'
+    })
+    .trim()
 }
 
 const animationOptions = {
