@@ -1,8 +1,14 @@
-import Menu from 'components/Menu'
-import ScrollToTop from 'components/ScrollToTop'
-// import Footer from 'components/Footer'
+import dynamic from 'next/dynamic'
 
 import * as S from './styles'
+
+const Menu = dynamic(() => import('components/Menu'), {
+  ssr: false
+})
+
+const ScrollToTop = dynamic(() => import('components/ScrollToTop'), {
+  ssr: false
+})
 
 export type BaseTemplateProps = {
   children: React.ReactNode

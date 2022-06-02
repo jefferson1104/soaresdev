@@ -13,7 +13,7 @@ const ScrollToTop = () => {
 
   if (isBrowser) {
     window.addEventListener('scroll', () => {
-      window.pageYOffset > 200 ? setScrollState(true) : setScrollState(false)
+      window.pageYOffset > 500 ? setScrollState(true) : setScrollState(false)
     })
   }
 
