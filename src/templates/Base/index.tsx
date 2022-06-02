@@ -6,6 +6,10 @@ const Menu = dynamic(() => import('components/Menu'), {
   ssr: false
 })
 
+const Footer = dynamic(() => import('components/Footer'), {
+  ssr: false
+})
+
 const ScrollToTop = dynamic(() => import('components/ScrollToTop'), {
   ssr: false
 })
@@ -20,14 +24,8 @@ const Base = ({ children }: BaseTemplateProps) => {
       <S.MenuContainer>
         <Menu />
       </S.MenuContainer>
-
       <S.Content>{children}</S.Content>
-
-      {/* <S.SectionFooter>
-        <Container>
-          <Footer />
-        </Container>
-      </S.SectionFooter> */}
+      <Footer />
       <ScrollToTop />
     </S.Wrapper>
   )
