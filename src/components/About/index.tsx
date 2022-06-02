@@ -16,16 +16,18 @@ const About = () => {
           <S.Content data-aos="zoom-in">
             <h2>Sobre Nós</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Em janeiro de 2021 iniciamos nossa jornada, criando uma conexão
+              entre negócio e tecnologia, disponibilizamos todas as skills
+              necessárias para entender a dor do negócio, desenvolver e
+              sustentar produtos digitais do zero. A SoaresDev te apoia no ciclo
+              completo do projeto, temos a capacidade e habilidade de
+              desenvolver desde o UI/UX, Front-end, back-end, devops, banco de
+              dados e outras tecnologias. Nós somos capazes de entregar com alta
+              qualidade e rapidez porque utilizamos metodologias ágeis de
+              desenvolvimento em nossos softwares, com a gente você conta com
+              uma visão que vai além do código e exerga a tecnologia como uma
+              solução para seus problemas, te auxiliamos na sua jornada de
+              transformação digital.
             </p>
           </S.Content>
         </Container>

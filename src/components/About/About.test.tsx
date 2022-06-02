@@ -13,7 +13,9 @@ describe('About component', () => {
     const checkTitle = screen.getByRole('heading', { name: /sobre nós/i })
     expect(checkTitle).toBeInTheDocument()
 
-    const checkParagraph = screen.getByText(/Lorem Ipsum is/i)
+    const checkParagraph = screen.getByText(
+      /Em janeiro de 2021 iniciamos nossa jornada/i
+    )
     expect(checkParagraph).toBeInTheDocument()
 
     const checkBackgroundImage = screen.getByRole('img', {

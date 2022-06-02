@@ -12,19 +12,19 @@ const mainTechnologies = [
     title: 'NodeJS',
     subtitle: 'BACK-END',
     description:
-      'Node.js, an event-driven asynchronous JavaScript execution environment, is designed to development of applications with high scalability, good flexibility.'
+      'Um runtime javascript projetado para desenvolvimento de aplicações com alta escalabilidade, boa flexibilidade, arquitetura e baixo custo.'
   },
   {
     title: 'ReactJS',
     subtitle: 'FRONT-END',
     description:
-      'React is an open source JavaScript library focused on creating user interfaces on web pages. its main objective is to be fast and scalable, and it can also.'
+      'Uma biblioteca javascript para a construção de SPA (Single Page Application), seu principal objetivo é ser rápido e escalável e utiliza o conceito de componentes.'
   },
   {
     title: 'React Native',
     subtitle: 'MOBILE',
     description:
-      'React Native is a framework based on the already acclaimed React, developed by the Facebook team, which enables the development of mobile applications.'
+      'Um framework da biblioteca ReactJS, possibilita o desenvolvimento de aplicativos para smartphones com sistema Android e iOS.'
   }
 ]
 

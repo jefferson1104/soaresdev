@@ -26,7 +26,7 @@ describe('Technologies component', () => {
     expect(checkCardSubtitle).toBeInTheDocument()
 
     const checkCardParagraph = screen.getByText(
-      /Node.js, an event-driven asynchronous/i
+      /Uma biblioteca javascript para a construção/i
     )
     expect(checkCardParagraph).toBeInTheDocument()
   })
