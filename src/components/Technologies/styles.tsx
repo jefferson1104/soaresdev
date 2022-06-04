@@ -28,24 +28,15 @@ export const Content = styled.div`
   flex-direction: column;
 `
 
-export const Cards = styled.div`
-  ${({ theme }) => css`
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 16rem;
-    margin: ${theme.spacings.large} 0;
+export const MainTechnologies = styled.div`
+  display: flex;
+  justify-content: space-between;
 
-    ${media.lessThan('large')`
-      grid-column-gap: 5rem;
-    `}
-
-    ${media.lessThan('medium')`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    `}
+  ${media.lessThan('small')`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   `}
 `
 
@@ -262,7 +253,7 @@ export const Technologies = styled.div`
 
     .slick-track,
     .slick-list {
-      width: 1260px;
+      width: 1280px;
     }
 
     .slick-slide {

@@ -125,7 +125,7 @@ const Technologies = () => {
       <h2 data-aos="fade-down">Tecnologias</h2>
       <Container>
         <S.Content data-aos="fade-up">
-          <S.Cards >
+          <S.MainTechnologies >
             {mainTechnologies.map((technology, index) => {
               return (
                 <S.Card key={index}>
@@ -141,7 +141,7 @@ const Technologies = () => {
                 </S.Card>
               )
             })}
-          </S.Cards>
+          </S.MainTechnologies>
 
           <S.Technologies>
             <Slider settings={settings}>
