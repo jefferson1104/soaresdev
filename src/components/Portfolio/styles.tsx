@@ -8,6 +8,8 @@ export const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     margin: ${theme.spacings.super} 0;
+    height: 100vh;
+    background: #17151f;
 
     > h2 {
       text-align: center;
@@ -31,33 +33,15 @@ export const PortfolioContent = styled.main`
   align-items: flex-start;
 `
 
-export const MainProjects = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-column-gap: 8rem;
-  grid-row-gap: 8rem;
-  margin-bottom: 100px;
-
-  ${media.lessThan('large')`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  `}
-`
-
 export const AllProjects = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     ${media.lessThan('huge')`
       overflow: hidden;
-      max-width: 1300px;
-    `}
-
-    ${media.lessThan('large')`
-      max-width: 1000px;
+      max-width: ${theme.grid.container};
     `}
 
     ${media.lessThan('medium')`
@@ -72,6 +56,10 @@ export const AllProjects = styled.div`
     .slick-track,
     .slick-list {
       width: ${theme.grid.container};
+    }
+
+    .slick-slide {
+      margin: 0 auto;
     }
 
     .slick-slide > div {
@@ -109,7 +97,7 @@ export const AllProjects = styled.div`
       list-style: none;
       align-items: center;
       justify-content: center;
-      margin-top: ${theme.spacings.small};
+      margin-top: ${theme.spacings.medium};
 
       li {
         background: ${theme.colors.white};

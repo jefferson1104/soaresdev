@@ -1,5 +1,4 @@
 import Container from 'components/Container'
-import MediaMatch from 'components/MediaMatch'
 import Slider, { SliderSettings } from 'components/Slider'
 import PortfolioCard from 'components/PortfolioCard'
 
@@ -8,9 +7,9 @@ import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/A
 
 import * as S from './styles'
 
-const mainProjects = [
+const allProjects = [
   {
-    image: 'projects/blog_soaresdev.png',
+    image: 'projects/blog-soaresdev.png',
     title: 'Blog SoaresDev',
     description:
       'Blog com dicas, tutoriais e guias rápidos sobre desenvolvimento web, desenvolvido com as tecnologias GatsbyJS, GraphQL, Markedown e outras.',
@@ -25,10 +24,7 @@ const mainProjects = [
       'Marketplace sobre programa de pontos do banco Itaú, clientes do banco pode trocar pontos por viagens e produtos ou fazer compras com cartão.',
 
     link: 'https://www.iupp.com.br'
-  }
-]
-
-const allProjects = [
+  },
   {
     image: 'projects/letmeask.png',
     title: 'Let Me Ask',
@@ -91,7 +87,7 @@ const allProjects = [
 ]
 
 const settings: SliderSettings = {
-  slidesToShow: 4,
+  slidesToShow: 3.3,
   slidesToScroll: 1,
   arrows: false,
   dots: true,
@@ -142,26 +138,6 @@ const Portfolio = () => {
       <h2 data-aos="fade-down">Portfolio</h2>
       <Container>
         <S.PortfolioContent data-aos="fade-up">
-          <div>
-            <MediaMatch greaterThan="medium">
-              <S.MainProjects>
-                {mainProjects.map(
-                  (project, index) =>
-                    project && (
-                      <PortfolioCard
-                        key={index}
-                        image={project.image}
-                        title={project.title}
-                        description={project.description}
-                        github={project.github}
-                        link={project.link}
-                      />
-                    )
-                )}
-              </S.MainProjects>
-            </MediaMatch>
-          </div>
-
           <S.AllProjects>
             <Slider settings={settings}>
               {allProjects.map(
@@ -174,7 +150,6 @@ const Portfolio = () => {
                       description={project.description}
                       github={project.github}
                       link={project.link}
-                      size="small"
                     />
                   )
               )}

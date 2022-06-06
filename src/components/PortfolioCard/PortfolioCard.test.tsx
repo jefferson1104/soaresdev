@@ -50,30 +50,4 @@ describe('PortfolioCard component', () => {
     const checkLink = screen.getByRole('link', { name: /Acesse/i })
     expect(checkLink).toBeInTheDocument()
   })
-
-  it('should render with small size', () => {
-    const { container } = render(
-      <PortfolioCard
-        image={mockInfo.image}
-        title={mockInfo.title}
-        description={mockInfo.description}
-        github={mockInfo.github}
-        link={mockInfo.link}
-        size="small"
-      />
-    )
-
-    expect(container.firstChild).toHaveStyle({
-      width: '320px',
-      height: '430px'
-    })
-
-    expect(screen.getByRole('heading', { name: /soaresdev/i })).toHaveStyle({
-      fontSize: '2.0rem'
-    })
-
-    expect(screen.getByText(/Uma linda landing page/i)).toHaveStyle({
-      fontSize: '1.6rem'
-    })
-  })
 })

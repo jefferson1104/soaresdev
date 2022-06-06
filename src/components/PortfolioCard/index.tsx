@@ -11,7 +11,6 @@ export type PortfolioCardProps = {
   description: string
   link?: string
   github?: string
-  size?: 'small' | 'normal'
 }
 
 const PortfolioCard = ({
@@ -19,11 +18,10 @@ const PortfolioCard = ({
   title,
   description,
   link,
-  github,
-  size = 'normal'
+  github
 }: PortfolioCardProps) => {
   return (
-    <S.Card size={size}>
+    <S.Card>
       <S.CardImage>
         <img src={image} alt={title} />
       </S.CardImage>
