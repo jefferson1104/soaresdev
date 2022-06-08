@@ -39,6 +39,7 @@ export const Content = styled.div`
 
       p {
         font-size: ${theme.font.sizes.small};
+        line-height: ${theme.spacings.medium};
         color: ${theme.colors.white};
       }
     `}

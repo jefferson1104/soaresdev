@@ -7,7 +7,11 @@ module.exports = {
     '!src/**/*.stories.tsx',
     '!src/pages/**/*.tsx',
     '!src/styles/**/*.ts',
-    '!src/types/**/*.d.ts'
+    '!src/types/**/*.d.ts',
+    '!src/pages/api/*.ts(x)?',
+    '!src/components/Menu/*.ts(x)?',
+    '!src/components/ContactForm/*.ts(x)?',
+    '!src/components/ScrollToTop/*.ts(x)?'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
