@@ -14,7 +14,7 @@ export const Wrapper = styled.footer`
   background: #17151f;
 
   ${media.lessThan('small')`
-    height: 90vh;
+    height: 100vh;
   `}
 `
 
