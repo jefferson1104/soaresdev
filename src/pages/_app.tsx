@@ -47,7 +47,7 @@ function App({ Component, pageProps }: AppProps) {
         }}
         twitter={{
           handle: '@jeffersonjr1104',
-          site: 'https://soaresdev.com/',
+          site: '@jeffersonjr1104',
           cardType: 'summary_large_image'
         }}
       />
