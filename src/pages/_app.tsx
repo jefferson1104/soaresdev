@@ -30,16 +30,8 @@ function App({ Component, pageProps }: AppProps) {
             {
               url: 'https://soaresdev.com/img/soaresdev-banner-seo.png',
               width: 800,
-              height: 600,
-              alt: 'SoaresDev Banner',
-              type: 'image/png'
-            },
-            {
-              url: 'https://soaresdev.com/img/soaresdev-banner-seo.png',
-              width: 900,
-              height: 800,
-              alt: 'SoaresDev Banner',
-              type: 'image/png'
+              height: 420,
+              alt: 'SoaresDev Banner'
             }
           ],
           site_name: 'SoaresDev',
