@@ -16,17 +16,31 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <NextSeo
-        title="SoaresDev - Desenvolvimento de sistemas e apps."
-        description="Desenvolvimento de aplicativos web, mobile, e-commerce, marketplace, websites, landing pages e SEO."
+        title="SoaresDev - Transformação digital para o seu produto ou serviço."
+        description="Conta com a gente para o desenvolvimento de aplicativos web, app mobile, e-commerce, marketplace, websites, landing pages e SEO do seu negócio."
         canonical="https://soaresdev.com/"
         openGraph={{
+          type: 'website',
           url: 'https://soaresdev.com/',
           title:
-            'React Avançado - Crie aplicações reais com NextJS, GraphQL e mais.',
+            'SoaresDev - Transformação digital para o seu produto ou serviço.',
           description:
-            'Desenvolvimento de aplicativos web, mobile, e-commerce, marketplace, websites, landing pages e SEO.',
+            'Conta com a gente para o desenvolvimento de aplicativos web, app mobile, e-commerce, marketplace, websites, landing pages e SEO do seu negócio.',
           images: [
-            { url: 'https://soaresdev.com/img/soaresdev-banner-seo.png' }
+            {
+              url: 'https://soaresdev.com/img/soaresdev-banner-seo.png',
+              width: 800,
+              height: 600,
+              alt: 'SoaresDev Banner',
+              type: 'image/png'
+            },
+            {
+              url: 'https://soaresdev.com/img/soaresdev-banner-seo.png',
+              width: 900,
+              height: 800,
+              alt: 'SoaresDev Banner',
+              type: 'image/png'
+            }
           ],
           site_name: 'SoaresDev',
           locale: 'pt_BR'

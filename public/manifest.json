@@ -1,5 +1,5 @@
 {
-  "name": "SoaresDev - desenvolvimento de sistemas e apps",
+  "name": "SoaresDev - Transformação digital para o seu produto ou serviço.",
   "short_name": "SoaresDev",
   "icons": [
     {
@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#06092B",
-  "description": "Desenvolvimento de sistemas e apps.",
+  "background_color": "#1d1b27",
+  "description": "Conta com a gente para o desenvolvimento de aplicativos web, app mobile, e-commerce, marketplace, websites, landing pages e SEO do seu negócio.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "#1d1b27"
 }
