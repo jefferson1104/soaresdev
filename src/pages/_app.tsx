@@ -16,14 +16,13 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <NextSeo
-        title="SoaresDev - Transformação digital para o seu produto ou serviço."
+        title="SoaresDev - Transformação digital para o seu negócio."
         description="Conta com a gente para o desenvolvimento de aplicativos web, app mobile, e-commerce, marketplace, websites, landing pages e SEO do seu negócio."
         canonical="https://soaresdev.com/"
         openGraph={{
           type: 'website',
           url: 'https://soaresdev.com/',
-          title:
-            'SoaresDev - Transformação digital para o seu produto ou serviço.',
+          title: 'SoaresDev - Transformação digital para o seu negócio.',
           description:
             'Conta com a gente para o desenvolvimento de aplicativos web, app mobile, e-commerce, marketplace, websites, landing pages e SEO do seu negócio.',
           images: [
