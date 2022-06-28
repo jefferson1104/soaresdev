@@ -9,29 +9,13 @@ import * as S from './styles'
 
 const allProjects = [
   {
-    image: 'projects/blog-soaresdev.png',
-    title: 'Blog SoaresDev',
+    image:
+      'https://raw.githubusercontent.com/jefferson1104/study-platform-reactjs/main/src/assets/screenshots/screenshot-01.png',
+    title: 'Event platform',
     description:
-      'Blog com dicas, tutoriais e guias rápidos sobre desenvolvimento web, desenvolvido com as tecnologias GatsbyJS, GraphQL, Markedown e outras.',
-
-    github: 'https://github.com/jefferson1104/blog-soaresdev',
-    link: 'https://blog.soaresdev.com/'
-  },
-  {
-    image: 'projects/iupp_itau.png',
-    title: 'Itaú iupp',
-    description:
-      'Marketplace sobre programa de pontos do banco Itaú, clientes do banco pode trocar pontos por viagens e produtos ou fazer compras com cartão.',
-
-    link: 'https://www.iupp.com.br'
-  },
-  {
-    image: 'projects/letmeask.png',
-    title: 'Let Me Ask',
-    description:
-      'Um sistema de organização de perguntas, onde você pode criar uma sala e enviar a seus seguidores.',
-    github: 'https://github.com/jefferson1104/letmeask-reactjs',
-    link: 'https://letmeask-reactjs.vercel.app/'
+      'Este projeto é um evento de estudos, onde o aluno se inscreve, faz login e tem acesso a video aulas, foi desenvolvido com ReactJS e GraphQL.',
+    github: 'https://github.com/jefferson1104/study-platform-reactjs',
+    link: 'https://study-platform-reactjs.vercel.app/'
   },
   {
     image: 'projects/ig_news.png',
@@ -56,6 +40,23 @@ const allProjects = [
       'Site com dicas de viagens sobre lugares incriveis, desenvolvido com NextJS, Prismic CMS e muitas outras tecnologias.',
     github: 'https://github.com/jefferson1104/spaceTraveling-nextjs',
     link: 'https://space-traveling-nextjs.vercel.app/'
+  },
+  {
+    image: 'projects/letmeask.png',
+    title: 'Let Me Ask',
+    description:
+      'Um sistema de organização de perguntas, onde você pode criar uma sala e enviar a seus seguidores.',
+    github: 'https://github.com/jefferson1104/letmeask-reactjs',
+    link: 'https://letmeask-reactjs.vercel.app/'
+  },
+  {
+    image: 'projects/blog-soaresdev.png',
+    title: 'Blog SoaresDev',
+    description:
+      'Blog com dicas, tutoriais e guias rápidos sobre desenvolvimento web, desenvolvido com as tecnologias GatsbyJS, GraphQL, Markedown e outras.',
+
+    github: 'https://github.com/jefferson1104/blog-soaresdev',
+    link: 'https://blog.soaresdev.com/'
   },
   {
     image: 'projects/go_barber.png',
