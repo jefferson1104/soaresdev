@@ -9,6 +9,17 @@ export const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
   }
+
+  img {
+    filter: brightness(0.5) !important;
+  }
+
+  ${media.lessThan('medium')`
+    .paralax-image {
+      height: 100%;
+      padding: 20px;
+    }
+  `}
 `
 
 export const Content = styled.div`

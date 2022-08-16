@@ -27,8 +27,8 @@ const Hero = () => {
               <h1>Desenvolvimento de software</h1>
               <p>
                 Impulsione seu negócio com as melhores tecnologias utilizadas
-                pelos gigantes do Vale do Silício, transformamos desafios de
-                empresas e empreendedores em soluções tecnológicas, criando
+                pelos gigantes do Vale do Silício, SoaresDev resolve o desafio
+                de empresas e empreendedores com soluções tecnológicas criando
                 produtos de software inovadores.
               </p>
               <S.ButtonSeeMore href="#services">

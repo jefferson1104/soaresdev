@@ -1,5 +1,5 @@
 {
-  "name": "SoaresDev - Transformação digital para o seu negócio.",
+  "name": "SoaresDev - desenvolvimento de software",
   "short_name": "SoaresDev",
   "icons": [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#1d1b27",
-  "description": "Conta com a gente para o desenvolvimento de aplicativos web, marketplace, e-commerce, aplicativos para smartphones, websites, landing pages e SEO.",
+  "description": "Transformação digital para seu negócio, desenvolvimento de aplicativos, e-commerce, websites, landing pages, marketplaces e muito mais.",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#1d1b27"

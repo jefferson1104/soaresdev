@@ -10,11 +10,11 @@ describe('About component', () => {
     const checkSectionId = container.querySelector('section')
     expect(checkSectionId).toHaveAttribute('id', 'about')
 
-    const checkTitle = screen.getByRole('heading', { name: /sobre nós/i })
+    const checkTitle = screen.getByRole('heading', { name: /sobre/i })
     expect(checkTitle).toBeInTheDocument()
 
     const checkParagraph = screen.getByText(
-      /Em janeiro de 2021 iniciamos nossa jornada/i
+      /iniciei minha jornada como programador na web em 2011/i
     )
     expect(checkParagraph).toBeInTheDocument()
 

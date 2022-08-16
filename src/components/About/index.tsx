@@ -14,20 +14,28 @@ const About = () => {
       >
         <Container>
           <S.Content data-aos="zoom-in">
-            <h2>Sobre Nós</h2>
+            <h2>Sobre</h2>
             <p>
-              Em janeiro de 2021 iniciamos nossa jornada, criando uma conexão
-              entre negócio e tecnologia, disponibilizamos todas as skills
-              necessárias para entender a dor do negócio, desenvolver e
-              sustentar produtos digitais do zero. A SoaresDev te apoia no ciclo
-              completo do projeto, temos a capacidade e habilidade de
-              desenvolver desde o UI/UX, Front-end, back-end, devops, banco de
-              dados e outras tecnologias. Nós somos capazes de entregar com alta
-              qualidade e rapidez porque utilizamos metodologias ágeis de
-              desenvolvimento em nossos softwares, com a gente você conta com
-              uma visão que vai além do código e exerga a tecnologia como uma
-              solução para seus problemas, te auxiliamos na sua jornada de
-              transformação digital.
+              Meu nome é <b>Jefferson Soares</b> iniciei minha jornada como
+              programador na web em 2011, naquele tempo as tecnologias que
+              aprendi e utilizava em meus projetos para o desenvolvimento web
+              foram: <b>HTML</b>, <b>CSS</b>, <b>Javascript</b> e <b>PHP</b>,
+              desde esse primeiro momento também utilizei <b>JQuery</b> e{' '}
+              <b>Bootstrap</b>, atuava com uma arquitetura MVC e com o paradigma
+              de <b>programação orientado a objetos</b>. Com a evolução da web e
+              surgimento de diversas tecnologias, resolvi me dedicar ao
+              ecossistema da linguagem de programação <b>JavaScript</b>, passei
+              a estudar e me atualizar constantemente com sua versão mais
+              moderna, para o desenvolvimento de uma API ou um back-end moderno
+              utilizo o runtime <b>NodeJS</b> como interpretador de JavaScript
+              no servidor, no front-end sou entusiasta da biblioteca para
+              construção de interfaces <b>ReactJS</b> e também do React Native
+              para o desenvolvimento de aplicativos nativos para sistemas
+              Android ou iOS, atualmente trabalho com um paradigma de{' '}
+              <b>programação orientado a função</b>, tenho conhecimento em
+              diferentes padrões de projetos e sempre me dedico a desenvolver um
+              código limpo e uma aplicação escalável, sou apaixonado por
+              tecnologia e como ela transforma o mundo.
             </p>
           </S.Content>
         </Container>
