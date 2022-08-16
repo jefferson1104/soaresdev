@@ -50,8 +50,12 @@ export default {
     super: '20rem'
   },
   paddings: {
-    small: '0.5rem',
-    medium: '1rem'
+    xsmall: '0.5rem',
+    small: '0.625rem',
+    medium: '1.25rem',
+    large: '2rem',
+    xlarge: '2.5rem',
+    huge: '6.5rem'
   },
   layers: {
     base: 10,

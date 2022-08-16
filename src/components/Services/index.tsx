@@ -35,9 +35,9 @@ const servicesData = [
 const Services = () => {
   return (
     <S.Wrapper id="services">
-      <h2 data-aos="fade-up">Serviços</h2>
+      <h2 data-aos="fade-down">Serviços</h2>
       <Container>
-        <S.ServicesContent data-aos="fade-down">
+        <S.ServicesContent data-aos="fade-up">
           {servicesData &&
             servicesData.map((service) => {
               return (

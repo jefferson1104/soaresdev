@@ -10,12 +10,12 @@ export type WrapperProps = { hasIcon: boolean } & Pick<
 const wrapperModifiers = {
   default: (theme: DefaultTheme) => css`
     width: 120px;
-    padding: ${theme.paddings.small};
+    padding: ${theme.paddings.xsmall};
     font-size: ${theme.font.sizes.medium};
   `,
   small: (theme: DefaultTheme) => css`
     width: 100px;
-    padding: ${theme.paddings.small};
+    padding: ${theme.paddings.xsmall};
     font-size: ${theme.font.sizes.xsmall};
   `,
   primary: (theme: DefaultTheme) => css`
