@@ -9,6 +9,34 @@ import * as S from './styles'
 
 const allProjects = [
   {
+    image: 'projects/go_barber.png',
+    title: 'Go Barber',
+    description:
+      'Sistema de agendamento para Barbearia, desenvolvido com ReactJS, React Native para mobile e uma API com NodeJS.',
+    github: 'https://github.com/jefferson1104/goBarber'
+  },
+  {
+    image: 'projects/wongames.png',
+    title: 'Won Games',
+    description: `Uma loja virtual de jogos, também contém DLC's, Demos, Packs e você pode comprar e baixar direto da sua casa.`,
+    github: 'https://github.com/jefferson1104/wongames'
+  },
+  {
+    image: 'projects/letmeask.png',
+    title: 'Let Me Ask',
+    description:
+      'Um sistema de organização de perguntas, onde você pode criar uma sala e enviar a seus seguidores.',
+    github: 'https://github.com/jefferson1104/letmeask-reactjs',
+    link: 'https://letmeask-reactjs.vercel.app/'
+  },
+  {
+    image: 'projects/esports-duo.png',
+    title: 'E-sports Duo',
+    description:
+      'Plataforma sobre de jogos online, uma pagina na web e um aplicativo mobile onde jogadores publicam suas informações para encontrar outras pessoas e jogar em parceria',
+    github: 'https://github.com/jefferson1104/esports-duo'
+  },
+  {
     image:
       'https://raw.githubusercontent.com/jefferson1104/study-platform-reactjs/main/src/assets/screenshots/screenshot-01.png',
     title: 'Event platform',
@@ -24,6 +52,13 @@ const allProjects = [
       'Uma plataforma de noticias, possui noticias gratuitas e uma versão de jornal digital pago.',
     link: 'https://ignews-nextjs.vercel.app/',
     github: 'https://github.com/jefferson1104/ignews-nextjs'
+  },
+  {
+    image: 'projects/app-help.png',
+    title: 'AppHelp',
+    description:
+      'Um aplicativo móvel para Android e iOS em demandas de suporte técnico, foi desenvolvido com tecnologia react-native.',
+    github: 'https://github.com/jefferson1104/appHelp-reactNative'
   },
   {
     image: 'projects/blog_dev.png',
@@ -42,14 +77,6 @@ const allProjects = [
     link: 'https://space-traveling-nextjs.vercel.app/'
   },
   {
-    image: 'projects/letmeask.png',
-    title: 'Let Me Ask',
-    description:
-      'Um sistema de organização de perguntas, onde você pode criar uma sala e enviar a seus seguidores.',
-    github: 'https://github.com/jefferson1104/letmeask-reactjs',
-    link: 'https://letmeask-reactjs.vercel.app/'
-  },
-  {
     image: 'projects/blog-soaresdev.png',
     title: 'Blog SoaresDev',
     description:
@@ -57,19 +84,6 @@ const allProjects = [
 
     github: 'https://github.com/jefferson1104/blog-soaresdev',
     link: 'https://blog.soaresdev.com/'
-  },
-  {
-    image: 'projects/go_barber.png',
-    title: 'Go Barber',
-    description:
-      'Sistema de agendamento para Barbearia, desenvolvido com ReactJS, React Native para mobile e uma API com NodeJS.',
-    github: 'https://github.com/jefferson1104/goBarber'
-  },
-  {
-    image: 'projects/wongames.png',
-    title: 'Won Games',
-    description: `Uma loja virtual de jogos, também contém DLC's, Demos, Packs e você pode comprar e baixar direto da sua casa.`,
-    github: 'https://github.com/jefferson1104/wongames'
   },
   {
     image: 'projects/proffy.png',

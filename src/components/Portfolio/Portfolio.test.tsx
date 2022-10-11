@@ -29,7 +29,7 @@ describe('Portfolio component', () => {
     expect(containerComponent).toBeInTheDocument()
 
     const porfolioCardComponent = screen.getAllByTestId(/Mock PortfolioCard/i)
-    expect(porfolioCardComponent).toHaveLength(10)
+    expect(porfolioCardComponent).toHaveLength(12)
 
     expect(
       screen.getByRole('heading', { name: /Portfolio/i })
